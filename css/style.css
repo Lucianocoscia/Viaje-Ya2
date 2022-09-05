@@ -636,6 +636,8 @@ div .boton1:hover{
 .contendor_form{
     min-height: 60vh;
     margin-top: 3rem;
+    display: flex;
+    justify-content: center;
 }
 .flex_column{
     display: flex;
@@ -679,7 +681,8 @@ p textarea {
     padding: .3rem;
 }
 
-p button {
+.contenedor__form p button {
+    text-align: center;
     width: 200px;
     padding: 15px 0;
     margin: 20px 10px;
@@ -691,7 +694,11 @@ p button {
     cursor: pointer;
     transition: .4s;
 }
-
+.boton_contacto_flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 p button:hover {
     background-color: #98A1A6;
