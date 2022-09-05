@@ -163,6 +163,7 @@ nav ul li a:hover {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   width: 100%;
   height: 530px;
   display: flex;
@@ -955,6 +956,14 @@ footer a:hover {
   }
   footer span {
     font-size: 2rem;
+  }
+  .home__contenedor2-login {
+    height: 100%;
+  }
+  .flex_column2 {
+    width: 300px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 

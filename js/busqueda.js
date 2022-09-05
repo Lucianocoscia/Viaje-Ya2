@@ -1,17 +1,12 @@
 import {paquetes00} from "./paquetes.js"
 
 const barraBusqueda = document.getElementById("barraDeBusqueda");
-const elValor = barraBusqueda.value
 
 const botonBuscar = document.getElementById("buscar")
 
 botonBuscar.addEventListener("click", () =>{
 
     let busqueda = paquetes00.find( el => el.destino === barraBusqueda.value);
-
-    // busqueda = busqueda.toLowerCase()
-
-
 
     Swal.fire({
         title:`${busqueda.destino}` ,

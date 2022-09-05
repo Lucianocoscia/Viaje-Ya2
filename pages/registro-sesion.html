@@ -25,50 +25,65 @@
 <body>
     <header>
         <div class="contenedor_logo_links">
-    <!-- logo -->
-            <a class="logo__enlace" href="./index.html"
-            ><img class="logo__img" src="" alt="logo"
-        /></a>
-
-    <!-- links -->
-            <nav>
+  
+            <a href="#lateral" class="boton menu"><span class="span-icon  material-symbols-outlined">
+              menu
+              </span></a>
+  <!-- logo -->
+          <a class="logo__enlace" href="#"
+          >Viaje-Ya</a>
+  
+  <!-- links -->
+          <nav id="lateral">
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../index.html#contenedorReserva">Reservas</a></li>
-                <li><a href="../index.html#lugares-populares">Lugares Populares</a></li>
-                <li><a href="../index.html#contacto">Contacto</a></li>
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="#contenedorReserva">Reservas</a></li>
+              <li><a href="#lugares-populares">Lugares Populares</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+              <li><a href="#"><span class=" span-icono-close material-symbols-outlined">
+                close
+                </span></a></li>
             </ul>
-            </nav>
+          </nav>
         </div> 
-
+  
         <div class="contenedor_busqueda_botones">
-    <!-- busqueda -->
-            <input
-            id="barraDeBusqueda"
-            class="barra-busqueda"
-            type="text"
-            placeholder="Buscar...."
-            />
-            <button id="buscar" class="boton-buscar">
+  <!-- busqueda -->
+        <div class="tablet_div-boton mobile_div-boton">
+          <input
+          id="barraDeBusqueda"
+          class="barra-busqueda"
+          type="text"
+          placeholder="Buscar...."
+          />
+          <button id="buscar" class="boton-buscar">
             <span class="span-icono jam jam-search"></span>
-            </button>
-    <!-- botones -->
-            <ul class="contenedor_botones">
-            <li>
-                <button class="boton" id="open" href="#">
-                <span class="icono jam jam-shopping-cart"
-                    ></span>
-                </button>
-            </li>
-            <li>
-                <button class="boton" id="open1" href="#">
-                <span class="icono jam jam-user"
-                    ></span>
-                </button>
-            </li>
-            </ul>
+          </button>
         </div>
-    </header>
+  
+  <!-- botones -->
+          <ul class="contenedor_botones">
+            <li >
+              <button class="boton" id="open" href="#">
+                <span class="icono jam jam-shopping-cart"
+                  ></span>
+              </button>
+            </li>
+            <li >
+              <button class="boton" id="open1" href="#">
+                <span class="icono jam jam-user"
+                  ></span>
+              </button>
+            </li>
+  <!--           <li>
+              <a href="#lateral" class="boton menu"><span class="span-icon  material-symbols-outlined">
+                menu
+                </span></a>
+  
+            </li> -->
+          </ul>
+        </div>
+      </header>
     <main>
 
         <section class="home__contenedor2-login">
