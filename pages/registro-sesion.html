@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Viaje-YA</title>
+
+    <!-- Link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Link de iconos -->
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <!-- Link bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
+    <!-- Link de CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <header>
+        <div class="contenedor_logo_links">
+    <!-- logo -->
+            <a class="logo__enlace" href="./index.html"
+            ><img class="logo__img" src="" alt="logo"
+        /></a>
+
+    <!-- links -->
+            <nav>
+            <ul>
+                <li><a href="../index1.html">Inicio</a></li>
+                <li><a href="../index1.html#contenedorReserva">Reservas</a></li>
+                <li><a href="../index1.html#lugares-populares">Lugares Populares</a></li>
+                <li><a href="../index1.html#contacto">Contacto</a></li>
+            </ul>
+            </nav>
+        </div> 
+
+        <div class="contenedor_busqueda_botones">
+    <!-- busqueda -->
+            <input
+            id="barraDeBusqueda"
+            class="barra-busqueda"
+            type="text"
+            placeholder="Buscar...."
+            />
+            <button id="buscar" class="boton-buscar">
+            <span class="span-icono jam jam-search"></span>
+            </button>
+    <!-- botones -->
+            <ul class="contenedor_botones">
+            <li>
+                <button class="boton" id="open" href="#">
+                <span class="icono jam jam-shopping-cart"
+                    ></span>
+                </button>
+            </li>
+            <li>
+                <button class="boton" id="open1" href="#">
+                <span class="icono jam jam-user"
+                    ></span>
+                </button>
+            </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+
+        <section class="home__contenedor2-login">
+            <div class="div__flex">
+                <div class="flex_column2">
+                    <span class="flex_column2-icon material-symbols-outlined">
+                    account_circle
+                    </span>
+                    <div class="flex_column-login">
+                        <h4 class="titulo-login">Registro de Sesión</h4>
+    
+                        <label for="">Nombre:</label>
+                        <input id="nombre" type="text">
+    
+                        <label for="">Email:</label>
+                        <input  type="email" name="" id="email">
+    
+                        <label for="">Contraseña:</label>
+                        <input id="contrasenia" type="password">
+    
+                        <button id="botonRegistro" class="contenedor__button"><span class="span1"></span>Registrarse</button>
+                    </div>
+
+                </div>
+  
+                <div class="flex_column2">
+                    <span class="flex_column2-icon material-symbols-outlined">
+                        login
+                    </span>
+
+                    <div class="flex_column-login">
+                        <h4>Iniciar Sesión</h4>
+
+                        <label class="loguearte__paddings" for="">Email:</label>
+                        <input  class="loguearte__paddings" type="email" name="" id="email2">
+
+                        <label class="loguearte__paddings" for="">Contraseña:</label>
+                        <input id="contrasenia2" class="loguearte__paddings" type="password">
+                        <a class="a-login" href="">¿Olvidó su contraseña? Cambiar contraseña</a>
+                        <button id="botonInicioSesion" class="contenedor__button"><span class="span1"></span>Iniciar Sesion</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="hr_grid">
+
+            <!-- Carrito -->
+        <div id="carrito" class="carrito">
+            <table id="lista-carrito">
+            <thead>
+                <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+            </table>
+            <a class="vaciar-carrito" href="#" id="vaciar-carrito"
+            >Vaciar Carrito</a
+            >
+            <button class="boton_cerrar" id="cerrar">Cerrar</button>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div>
+            <p>© Copyright 2022, Luciano Coscia Developer</p>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/"
+            ><span class="jam jam-youtube"></span
+            ></a>
+            <a href="https://es-la.facebook.com/"
+            ><span class="jam jam-facebook"></span
+            ></a>
+            <a href="https://www.instagram.com/"
+            ><span class="jam jam-instagram"></span
+            ></a>
+            <a href="#"
+            ><span class="flecha-arriba jam jam-arrow-circle-up"></span
+            ></a>
+        </div>
+    </footer>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> -->
+    
+    <!-- Toastify -->
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="../js/modal.js" type="module"></script>
+
+</body>
+</html>

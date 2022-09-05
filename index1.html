@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viaje-YA</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+    <!-- Link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Link de iconos -->
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <!-- Link bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
+    <!-- Link de CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+
+    <header>
+      <div class="contenedor_logo_links">
+<!-- logo -->
+        <a class="logo__enlace" href="./index.html"
+        ><img class="logo__img" src="" alt="logo"
+      /></a>
+
+<!-- links -->
+        <nav>
+          <ul>
+            <li><a href="./index1.html">Inicio</a></li>
+            <li><a href="#contenedorReserva">Reservas</a></li>
+            <li><a href="#lugares-populares">Lugares Populares</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div> 
+
+      <div class="contenedor_busqueda_botones">
+<!-- busqueda -->
+        <input
+        id="barraDeBusqueda"
+        class="barra-busqueda"
+        type="text"
+        placeholder="Buscar...."
+        />
+        <button id="buscar" class="boton-buscar">
+          <span class="span-icono jam jam-search"></span>
+        </button>
+<!-- botones -->
+        <ul class="contenedor_botones">
+          <li>
+            <button class="boton" id="open" href="#">
+              <span class="icono jam jam-shopping-cart"
+                ></span>
+            </button>
+          </li>
+          <li>
+            <button class="boton" id="open1" href="#">
+              <span class="icono jam jam-user"
+                ></span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+<!-- IMG principal -->
+      <section>
+        <div class="home__contenedor">
+          <h1 class="contenedor__titulo">Explora tu nuevo destino</h1>
+          <p class="contenedor__parrafo">
+            Encontra tu proximo destino en Viaje-YA, los mejores lugares, 
+            paquetes y precios!
+          </p>
+        </div>
+      </section>
+
+<!-- Reserva -->
+      <section>
+        <div  class="reserva__contenedor1">
+          <div id="contenedorReserva" class="contenedor__form1">
+            <div class="form1__divs">
+              <label for=""
+                >Elija si quiere vuelo de solo ida o ida y vuelta:</label
+              >
+
+              <label for="">Ida</label>
+              <input type="checkbox" name="" id="ida" />
+
+              <label for=""> Ida y vuelta</label>
+              <input type="checkbox" name="" id="idaYVuelta" />
+            </div>
+
+            <div class="form1__divs">
+              <label for="">Origen</label>
+              <input type="text" name="" id="origen" />
+
+              <label for="">Destino</label>
+              <input type="text" name="" id="destino" />
+            </div>
+            <div class="form1__divs">
+              <label for="">Fecha de salida</label>
+              <input type="date" name="" id="fechaSalida" />
+
+              <label for="">Fecha de vuelta</label>
+              <input type="date" name="" id="fechaVuelta" />
+            </div>
+            <div class="form1__divs">
+              <label for="">Cantidad de pasajeros</label>
+              <input id="pasajeros" type="number" />
+
+              <label for="">Cupon de descuento:</label>
+              <input id="descuento" type="text" />
+            </div>
+            <div class="form1__divs">
+              <button
+                id="botonReserva"
+                class="boton-reservar form1__divs_button"
+              > Reservar
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- Seccion Lugares populares -->
+      <section id="lugares-populares">
+        <div id="lista-paquetes" class="contenedor__lugares">
+          <div class="lugares_titulo">
+            <h2>
+              Conoce Argentina! Estos son los lugares mas populares de nuestro
+              pais!
+            </h2>
+          </div>
+
+          <div id="card" class="contenedor__cards"></div>
+        </div>
+      </section>
+
+<!-- grid del medio -->
+      <section>
+        <div class="grid">
+            <div class="grid_hijo1">
+              <div class="flex">
+                <h2>Elegi Donde</h2>
+                <p>Contamos con mas de 100 destinos para que elijas.</p>
+              </div>
+            </div>
+            <div class="grid_hijo2">
+              <img  class="grid_img" src="../images/trip.jpg" alt="">
+            </div>
+        </div>
+        <hr class="hr_grid">
+        <div class="grid2">
+          <div class="grid_hijo3">
+            <img class="grid_img"  src="../images/aeropuerto.jpg"  alt="">
+          </div>
+          <div class="grid_hijo4">
+            <div class="flex">
+              <h2>Free Shop</h2>
+              <p>Con tu compra en Viaje-Ya tenes un 15% de descuento en el Free Shop</p>
+            </div>
+
+          </div>
+<!--           <hr class="hr_grid">
+        <div class="grid2">
+          <div class="grid_hijo">
+            <img class="grid_img"  src="../images/paisaje07.png"  alt="">
+          </div>
+          <div class="grid_hijo">
+            <div class="flex">
+              <h2>Free Shop</h2>
+              <p>Con tu compra en Viaje-Ya tenes un 15% de descuento en el Free Shop</p>
+            </div>
+
+          </div> -->
+        </div>
+
+
+      </section>
+      <hr class="hr_grid">
+      <section class="home__contenedor2">
+        <div class="div__flex">
+            <div class="flex_column1">
+              <span class="flex_column1-icon material-symbols-outlined">
+                account_circle
+                </span>
+                <p class="flex_column1-p">Para realizar una compra en nuestro portal debes registrarte!</p>
+                <a class="flex_column1-a" class="flex_column1-a" href="./pages/registro-sesion.html">Registrarse</a>
+            </div>
+
+            <div class="flex_column1">
+              <span class="flex_column1-icon material-symbols-outlined">
+                login
+                </span>
+                <p class="flex_column1-p">Ya tenes una cuenta? Inicia Sesión</p>
+                <a class="flex_column1-a" href="./pages/registro-sesion.html">Iniciar Sesion</a>
+            </div>
+        </div>
+    </section>
+      <hr class="hr_grid">
+<!-- Muestro los paquetes  -->
+      <section>
+        <h5 class="paquetes_titulo">Descubri todos los destinos que tenemos para vos!</h5>
+        <div class="paquetes__contenedor">
+          <div>
+            <div id="contenedorPaquetes" class="paquetes__flex"></div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Seccion contacto -->
+      <section>
+        <div id="contacto" class="contenedor__contacto">
+          <form class="contenedor__form">
+            <h2>Contactanos</h2>
+
+            <div class="flex_column">
+
+              <p>
+                <label for="nombre">Nombre Completo</label>
+                <input
+                  type="text"
+                  name="nombre"
+                  id="nombre"
+                  placeholder="Escriba aqui su nombre"
+                />
+              </p>
+              <p>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Escriba aqui su email"
+                />
+              </p>
+              <p>
+                <label for="telefono">Telefono</label>
+                <input
+                  type="telefono"
+                  name="telefono"
+                  id="telefono"
+                  placeholder="Escriba aqui su numero de celular"
+                />
+              </p>
+              <p class="block">
+                <label for="consulta">Consulta</label>
+                <textarea
+                  name="consulta"
+                  rows="4"
+                  id="consulta"
+                  placeholder="Escriba aqui su consulta"
+                ></textarea>
+              </p>
+              <p class="block">
+                <button type="submit">
+                  Enviar
+                </button>
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+<!-- Carrito -->
+      <div id="carrito" class="carrito">
+        <table id="lista-carrito">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Precio</th>
+              <th>Cantidad</th>
+            </tr>
+          </thead>
+          <tbody class="tbody"></tbody>
+        </table>
+        <a class="vaciar-carrito" href="#" id="vaciar-carrito"
+          >Vaciar Carrito</a
+        >
+        <button class="boton_cerrar" id="cerrar">Cerrar</button>
+      </div>
+    </main>
+
+<!-- footer -->
+    <footer>
+      <div>
+        <p>© Copyright 2022, Luciano Coscia Developer</p>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/"
+          ><span class="jam jam-youtube"></span
+        ></a>
+        <a href="https://es-la.facebook.com/"
+          ><span class="jam jam-facebook"></span
+        ></a>
+        <a href="https://www.instagram.com/"
+          ><span class="jam jam-instagram"></span
+        ></a>
+        <a href="#"
+          ><span class="flecha-arriba jam jam-arrow-circle-up"></span
+        ></a>
+      </div>
+    </footer>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!--     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Toastify -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+
+    <script src="../js/reserva1.js" type="module"></script>
+    <script src="../js/modal.js" type="module"></script>
+    <script src="../js/renderpaquetes.js" type="module"></script>
+    <!-- Lugares populares -->
+    <script src="../js/renderProductos.js" type="module"></script>
+    <script src="../js/carritoLugares.js" type="module"></script>
+  </body>
+</html>
