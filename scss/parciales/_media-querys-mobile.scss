@@ -1,0 +1,211 @@
+@media screen and (max-width:600px) { 
+    /* Mobile */
+
+    //HEADER
+
+    header{
+        height: 12vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        left: 0;
+        transform: translateX(5px);
+        border: transparent;
+    }
+    .boton{
+        padding: 0;
+        width: 30px;
+        margin: 0;
+        margin-right: 10px;
+    }
+    nav{
+        display: block;
+    }
+    .contenedor_busqueda_botones{
+        display: block;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    }
+    nav ul li{
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
+    #lateral {
+        display: block;
+        background-color: #212529b6;/* rgba(0, 0, 0, 0.8) */
+        width: 80%;
+        height: 100vh;
+
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 100 ;
+
+        transition: left 1s;
+    }
+    #lateral:target{
+        left: 0;
+
+        color: #fff;
+    }
+    .span-icon{
+        font-size: 2rem;
+    }
+    .span-icono-close{
+        font-size: 16px;
+        visibility: visible;
+        // display: block;
+    }
+
+    .contenedor_botones{
+        position: absolute;
+        right: 0;
+        transform: translate(0,-25px);
+    }
+    .logo__enlace{
+        text-align: center;
+        font-size: 18px;
+        margin-left: 10px;
+        margin-bottom: 0;
+    }
+    .tablet_div-boton{
+        // transform: translate(-90px, -25px);
+        visibility: hidden;
+    }
+
+    //HOME
+    .home__contenedor{
+        background-attachment: fixed;
+        height: 91vh;
+    }
+    .contenedor__titulo{
+        // font-size: 24px;
+        text-align: center;
+        transform: translateY(200px);
+        // visibility: hidden;
+    }
+    .contenedor__parrafo{
+        // text-align: center;
+        visibility: hidden;
+    }
+
+    // RESERVA
+    .reserva__contenedor1{
+        height: 80vh;
+        margin-bottom: 1rem;
+    }
+    .form1__divs{
+        margin: 6px;
+        width: 100%;
+    }
+    .form1__divs label, input{
+        padding: 0;
+    }
+    .contenedor__form1{
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        transform: translate(0);
+    }
+    .form1__divs input{
+        width: 70%;
+    }
+    .form1__divs_button{
+        width: 50%;
+    }
+
+    //LUGARES POPULARES
+    h2{
+        font-size: 20px;
+    }
+    .card__img{
+        width: 100%;
+    }
+
+
+    // GRIDS
+
+    .grid_img{
+        object-fit: cover;
+        background-position: center ;
+    }
+
+    //LOGIN
+    .home__contenedor2{
+        height: 100%;
+    }
+    .div__flex{
+        flex-direction: column;
+    }
+    .flex_column1-p, .flex_column1-a{
+        margin-bottom: 0;
+    }
+    .flex_column1{
+        padding: 0;
+        margin: 1rem;
+    }
+    .flex_column1-icon{
+        font-size: 2rem;
+    }
+
+    // CARDS PAQUETES
+    .paquete__item{
+        width: 100%;
+    }
+    .paquete__img{
+        width: 100%;
+    }
+
+    //FOOTER
+    footer{
+        bottom: 0;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        height: 12vh;
+    }
+    footer div p{
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+    }
+    p{
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    footer div a{
+        margin: 0;
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    footer span{
+        font-size: 22px;
+        padding: 0;
+    }
+    .flecha-arriba{
+        margin: 0;
+        padding: 0;
+    }
+
+    //CARRITO
+    .carrito-visible{
+        min-width: 100%;
+    }
+    .boton_cerrar{
+        width: 100px;
+        padding: 10px;
+    }
+    .tbody td{
+        padding: 0.3rem;
+    }
+}

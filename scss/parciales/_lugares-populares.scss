@@ -1,0 +1,73 @@
+/* Lugares Populares */
+
+.lugares_titulo {
+    color: #000;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem ;
+    padding-bottom: 2rem ;
+    height: 10vh;
+}
+
+.contenedor__cards {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+.cards {
+    width: 350px;
+    min-height: 550px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right:1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform .4s;
+
+}
+
+.card__img:hover {
+    transform: scale(1.03);
+}
+
+.card__img {
+    height: 250px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: .5s;
+}
+
+.card__titulos {
+    padding-top: 1rem;
+    font-size: 24px;
+}
+
+div .boton1 {
+    width: 200px;
+    padding: 15px 0;
+    margin: 20px 10px;
+    /* margin-top: 0.5rem; */
+    /* margin-bottom: 0.5rem; */
+    /* font-weight: bold; */
+    text-align: center;
+    border-radius: 0.375rem;
+    /* font-weight: bold; */
+    border: 1px solid #9CA4A8;
+    background: transparent;
+    color: #000;
+    cursor: pointer;
+    transition: .4s;
+}
+div .boton1:hover{
+    background-color: #98A1A6;
+    color: #fff;
+}

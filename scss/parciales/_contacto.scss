@@ -1,0 +1,76 @@
+/* Seccion Contacto */
+
+.contenedor__contacto{
+    margin-top: 3rem;
+}
+.contendor_form{
+    min-height: 60vh;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.flex_column{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor__form h2 {
+    text-align: center;
+}
+
+.contenedor__form p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: .8rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: .8rem;
+}
+
+p label {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+p input {
+    text-align: start;
+    width: 100%;
+    border-radius: 2px;
+    padding: .3rem;
+    border: 1px solid #9CA4A8;
+    background-color: #ffff;
+    color: #000;
+}
+
+p textarea {
+    text-align: start;
+    width: 100%;
+    background-color: #ffff;
+    padding: .3rem;
+}
+
+.contenedor__form p button {
+    text-align: center;
+    width: 200px;
+    padding: 15px 0;
+    margin: 20px 10px;
+    text-align: center;
+    border-radius: 0.375rem;
+    border: 1px solid #9CA4A8;
+    background: transparent;
+    color: #000;
+    cursor: pointer;
+    transition: .4s;
+}
+.boton_contacto_flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p button:hover {
+    background-color: #98A1A6;
+    color: #fff;
+}

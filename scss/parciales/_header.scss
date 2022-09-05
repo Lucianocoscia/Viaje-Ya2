@@ -1,0 +1,126 @@
+/*  HEADER */
+
+header {
+    top: 0;
+    height: 9vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212529;
+    color: #F5F5F5;
+    /* position: sticky; */
+}
+.logo__enlace{
+    font-size: 22px;
+    font-weight: 700;
+    color: #F5F5F5;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 1rem;
+    padding: 0.3rem;
+    transition: .4s;
+}
+.logo__enlace:hover{
+    color: #98A1A6;
+    text-decoration: none;
+}
+.contenedor_logo_links{
+    display: flex;
+    align-items: center;
+}
+.contenedor_botones{
+    display: flex;
+    list-style-type: none;
+}
+.contenedor_busqueda_botones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    margin-bottom: 0;
+}
+ul{
+    margin-bottom: 0;
+}
+nav ul li {
+    list-style-type: none;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    opacity: 0.5;
+    color: #98A1A6;
+
+}
+.icono{
+    font-size: 1rem;
+    color: #fff;
+
+}
+.contador{
+    padding-left: 0.5rem;
+    text-align: center;
+    font-family:'Poppins', sans-serif;
+}
+.boton{
+    width: 50px;
+    padding: 6px 12px;
+    margin-right: 1rem;
+    text-align: center;
+    border-radius: 0.375rem;
+    font-weight: bold;
+    border: 1px solid #9CA4A8;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: .4s;
+}
+.boton:hover{
+    background-color:#98A1A6 ;
+}
+/* Barra de busqueda */
+
+.barra-busqueda{
+    text-align: start;
+    width: 200px;
+    border-radius: 2px;
+    padding: .2rem;
+    border: 1px solid #9CA4A8;
+    background-color: #ffff;
+    color: #000;
+}
+.boton-buscar{
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    width: 50px;
+    color: #fff;
+    margin-left: .2rem;
+    transition: .4s;
+}
+.boton-buscar:hover{
+    color: #98A1A6;
+}
+
+.span-icono {
+    font-size: 1rem;
+}
+.menu{
+    // visibility: hidden;
+    display: none;
+}
+.span-icono-close{
+    // display: none;
+    visibility: hidden;
+}

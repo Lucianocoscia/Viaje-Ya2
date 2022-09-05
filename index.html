@@ -32,23 +32,31 @@
 
     <header>
       <div class="contenedor_logo_links">
+
+          <a href="#lateral" class="boton menu"><span class="span-icon  material-symbols-outlined">
+            menu
+            </span></a>
 <!-- logo -->
         <a class="logo__enlace" href="#"
         >Viaje-Ya</a>
 
 <!-- links -->
-        <nav>
+        <nav id="lateral">
           <ul>
             <li><a href="./index.html">Inicio</a></li>
             <li><a href="#contenedorReserva">Reservas</a></li>
             <li><a href="#lugares-populares">Lugares Populares</a></li>
             <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#"><span class=" span-icono-close material-symbols-outlined">
+              close
+              </span></a></li>
           </ul>
         </nav>
       </div> 
 
       <div class="contenedor_busqueda_botones">
 <!-- busqueda -->
+      <div class="tablet_div-boton mobile_div-boton">
         <input
         id="barraDeBusqueda"
         class="barra-busqueda"
@@ -58,20 +66,28 @@
         <button id="buscar" class="boton-buscar">
           <span class="span-icono jam jam-search"></span>
         </button>
+      </div>
+
 <!-- botones -->
         <ul class="contenedor_botones">
-          <li>
+          <li >
             <button class="boton" id="open" href="#">
               <span class="icono jam jam-shopping-cart"
                 ></span>
             </button>
           </li>
-          <li>
+          <li >
             <button class="boton" id="open1" href="#">
               <span class="icono jam jam-user"
                 ></span>
             </button>
           </li>
+<!--           <li>
+            <a href="#lateral" class="boton menu"><span class="span-icon  material-symbols-outlined">
+              menu
+              </span></a>
+
+          </li> -->
         </ul>
       </div>
     </header>
@@ -94,7 +110,7 @@
           <div id="contenedorReserva" class="contenedor__form1">
             <div class="form1__divs">
               <label for=""
-                >Elija si quiere vuelo de solo ida o ida y vuelta:</label
+                >Elija el formato de su pasaje:</label
               >
 
               <label for="">Ida</label>
@@ -305,13 +321,13 @@
       </div>
       <div>
         <a href="https://www.youtube.com/"
-          ><span class="jam jam-youtube"></span
+          ><span class="youtube jam jam-youtube"></span
         ></a>
         <a href="https://es-la.facebook.com/"
-          ><span class="jam jam-facebook"></span
+          ><span class="facebook jam jam-facebook"></span
         ></a>
         <a href="https://www.instagram.com/"
-          ><span class="jam jam-instagram"></span
+          ><span class="instagram jam jam-instagram"></span
         ></a>
         <a href="#"
           ><span class="flecha-arriba jam jam-arrow-circle-up"></span

@@ -1,0 +1,92 @@
+/* Carrito */
+.carrito {
+    position: fixed; 
+    background-color: transparent;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    border-radius: 4px ;
+    z-index: 100;
+    overflow: auto;
+    scrollbar-color: #1e1e1e;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffff;
+}
+
+.carrito::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.carrito::-webkit-scrollbar-thumb {
+    background-color: #98A1A6;
+}
+
+.carrito::-webkit-scrollbar {
+    width: 8px;
+}
+.carrito-visible{
+    opacity: 1;
+    visibility: visible;
+    z-index: 5;
+    min-width: 80%;
+    height: 100vh;
+    transition: 0.5s;
+    background-color: #1e1e1eea;
+}
+.boton-eliminar{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: transparent;
+}
+.icono2{
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+.tbody td{
+    padding: 1rem;
+    text-align: center;
+}
+.vaciar-carrito{
+    text-decoration: none;
+    color: #fff;
+}
+.vaciar-carrito:hover{
+    color: #98A1A6;
+}
+.boton-suma{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: transparent;
+}
+.boton-resta{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: transparent;
+}
+.flexrow{
+    display: flex;
+    flex-direction: row;
+}
+.boton_cerrar{
+    color: #fff;
+    width: 200px;
+    padding: 15px 0;
+    margin: 20px 10px;
+    text-align: center;
+    border-radius: 0.375rem;
+    border: 1px solid #9CA4A8;
+    background: transparent;
+    cursor: pointer;
+    transition: .4s;
+}
+.boton_cerrar:hover{
+    background-color: #98A1A6;
+}
