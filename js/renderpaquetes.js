@@ -15,4 +15,5 @@ fetch("../json/paquetes.json")
                         `
         contenedorPaquetes.append(div);
     }
-});
+})
+.catch((error) => console.log(error));
