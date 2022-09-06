@@ -1,7 +1,7 @@
 // renderizado los paquetes en la seccion de reserva
 const contenedorPaquetes = document.getElementById("contenedorPaquetes");
 
-fetch("../json1/paquetes.json")
+fetch("../json/paquetes.json")
 .then(response => response.json())
 .then(paquetes => {
     for (const paquete of paquetes) {

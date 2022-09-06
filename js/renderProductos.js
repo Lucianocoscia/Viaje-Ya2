@@ -1,6 +1,6 @@
 const contenedorPaquetes = document.getElementById("card");
 
-fetch("../json1/paquetes-populares.json")
+fetch("../json/paquetes-populares.json")
 .then(response => response.json())
 .then(paquetes => {
     for (const paquete of paquetes){
