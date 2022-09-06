@@ -97,7 +97,7 @@ function loguearte (){
                 title: `Bienvenido ${localStorage.nombre}`,
                 showConfirmButton: false,
                 timer: 1500
-            }), setTimeout(function(){window.location.href = "../pages/reservar.html"}, 2000);  ;
+            }), setTimeout(function(){window.location.href = "../index#contenedorReserva.html"}, 2000);  ;
 
         email2.value = "";
         contrasenia2.value ="";
