@@ -23,7 +23,7 @@ function agregarPaquete (e){
 }
 
 // Elimina paquete del carrito
-function eliminarPaquete (e){
+/* function eliminarPaquete (e){
     if(e.target.classList.contains("boton-eliminar")){
         const paqueteId = e.target.getAttribute("data-id");
         //Elimina del arreglo de paquetesCarrito por el data-id
@@ -31,7 +31,7 @@ function eliminarPaquete (e){
 
         carritoHTML(); //iterar sobre el carrito y mostrar su HTML
     }
-}
+} */
 
 // funcion para limpiar el carrito
 function limpiarHTML(){
@@ -48,7 +48,7 @@ function cargarEventListeners (){
     listaPaquetes.addEventListener("click", agregarPaquete);
 
     //elimina paquetes del carrito
-    carrito.addEventListener("click", eliminarPaquete);
+    // carrito.addEventListener("click", eliminarPaquete);
 
     // vaciar el carrito
     vaciarCarritoBtn.addEventListener("click", () =>{
@@ -82,12 +82,60 @@ function carritoHTML (){
                         <td>${titulo}</td>
                         <td>${precio}</td>
                         <td>${cantidad}</td>
-                        <td> <button data-id ="${id}" class = "boton-eliminar icono2 jam jam-trash"></button> </td>
-                        <td> <button data-id ="${id}" class = "boton-resta  icono2 jam jam-minus"></button> </td>
-                        <td> <button data-id ="${id}" class = "boton-suma  icono2 jam jam-plus"></button> </td>
+                        <td><button id ="Eliminar${id}" class = "boton-eliminar icono2 jam jam-trash"></button></td>
+                        <td> <button id ="Restar${id}" class = "boton-resta  icono2 jam jam-minus"></button> </td>
+                        <td> <button id ="Sumar${id}" class = "boton-suma  icono2 jam jam-plus"></button> </td>
                         `;
         // Agrega el html del carrito en el tbody
         contenedorCarrito.append(row);
+
+        // Eliminar reserva del carrito
+        const botonEliminar = document.getElementById(`Eliminar${id}`);
+
+        botonEliminar.addEventListener("click", () => {
+          console.log("Apretando en el boton eliminar");
+          paquetesCarrito = paquetesCarrito.filter((reserva) => reserva.id !== id); 
+
+          carritoHTML();
+          console.log(paquetesCarrito);
+        });
+
+      // Sumar y restar cantidades 
+      const botonMas = document.getElementById(`Sumar${id}`);
+      const botonMenos = document.getElementById(`Restar${id}`);
+
+      // BOTON MAS 
+      botonMas.addEventListener('click', ()=>{
+            console.log("apretando en mas");
+            for(let i = 0; i < paquetesCarrito.length; i++){
+              if(paquetesCarrito[i].id === id){
+                paquetesCarrito[i].cantidad++;
+                paquetesCarrito[i].precio = paquetesCarrito[i].precioBase * paquetesCarrito[i].cantidad;
+                paquetesCarrito[i].precioDescuento = paquetesCarrito[i].precioDescuentoBase * paquetesCarrito[i].cantidad;
+              }
+            }
+            carritoHTML();
+            console.log(paquetesCarrito);
+      });
+
+      // BOTON MENOS 
+      botonMenos.addEventListener('click', ()=>{
+        console.log("apretando en menos");
+        for(let i = 0; i < paquetesCarrito.length; i++){
+          if(paquetesCarrito[i].id === id){
+            paquetesCarrito[i].cantidad -= 1;
+            paquetesCarrito[i].precio = paquetesCarrito[i].precioBase * paquetesCarrito[i].cantidad;
+            paquetesCarrito[i].precioDescuento = paquetesCarrito[i].precioDescuentoBase * paquetesCarrito[i].cantidad;
+
+          }
+          if(paquetesCarrito[i].cantidad <= 0){
+            paquetesCarrito.splice(i,1);
+          }
+        }
+        carritoHTML();
+      }); 
+
+
     })
 }
 
@@ -139,7 +187,7 @@ function leerDatosPaquete(paquete){
 } 
 carritoHTML();
 
-contenedorCarrito.addEventListener("click", (e) =>{
+/* contenedorCarrito.addEventListener("click", (e) =>{
     const mas = e.target.classList.contains("boton-suma");
     const menos = e.target.classList.contains("boton-resta");
     if( mas || menos){
@@ -159,5 +207,8 @@ contenedorCarrito.addEventListener("click", (e) =>{
         }
         carritoHTML();
     }
-});
+}); */
 
+/*                         <td> <button data-id ="${id}" class = "boton-eliminar icono2 jam jam-trash"></button> </td>
+                        <td> <button data-id ="${id}" class = "boton-resta  icono2 jam jam-minus"></button> </td>
+                        <td> <button data-id ="${id}" class = "boton-suma  icono2 jam jam-plus"></button> </td> */

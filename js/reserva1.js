@@ -16,10 +16,14 @@ const cantidadDePasajeros = document.getElementById("pasajeros");
 // Array donde seran guardados los datos PrecioGlobal, PrecioDescuentoGlobal, IdGlobal
 let datos = [];
 // Array donde seran guardados las reservas completas 
-let reservasCarrito = [];
+let paquetesCarrito = [];
+// let paquetesCarrito =  JSON.parse(localStorage.getItem("carrito2")) ;
+// if(!paquetesCarrito){
+//     paquetesCarrito = [];
+// }
 
 
-console.log(reservasCarrito);
+console.log(paquetesCarrito);
 // Variables q le asigno luego la posicion del array en la q esten pusheados
 let idGlobal;
 let precioGlobal;
@@ -69,6 +73,7 @@ boton.addEventListener("click", ()=> {
     };
     
     // console.log(infoReserva);
+    // localStorage.setItem("carrito2", JSON.stringify(infoReserva));
 
     if (vueloIda.checked) {
       const mensaje1 = `Fecha de partida: ${fecha1.value} <br> Origen: ${origen.value} <br> Destino: ${destino.value} <br>   Precio Lista: $${datos[0]} <br>
@@ -85,29 +90,32 @@ boton.addEventListener("click", ()=> {
     }
 
   // Agrega elementos al arreglo de reservacarrito
-  reservasCarrito = [...reservasCarrito, infoReserva];
+  paquetesCarrito = [...paquetesCarrito, infoReserva];
 
   // Ver por consola si me lo agrego
-  console.log(reservasCarrito);
+  console.log(paquetesCarrito);
 
   function hacerCarrito(){
 
-    //contador de item en el carrito
+/*     //contador de item en el carrito
     const contador = document.getElementById("contador1");
-    contador.innerText = reservasCarrito.length;
+    contador.innerText = reservasCarrito.length; */
+
+    // Intento de localStorage
+    // localStorage.setItem("carrito", JSON.stringify(paquetesCarrito));
 
     limpiarHTML();
-  // aca si ubico el localstorage de lugares-populares me lo muestra pero no me anda la funcionalidad de sumar y restar
 
     // Imprimo todo en el carrito
-    reservasCarrito.forEach((reserva) => {
+    paquetesCarrito.forEach((reserva) => {
       // Optimizando con variables
       const { fechaPartida, fechaVuelta, origen, destino, precio, precioDescuento, id, cantidad} = reserva;
 
       const row = document.createElement("tr");
 
       row.innerHTML = `
-                              <td class="productoEnCarrito2-p" >Fecha de Partida: ${fechaPartida} 
+
+                      <td class="productoEnCarrito2-p" >Fecha de Partida: ${fechaPartida} 
                                                               <p>Fecha de Vuelta: ${fechaVuelta}</p>
                                                               <p>Origen: ${origen}</p>
                                                               <p>Destino: ${destino}</p> 
@@ -117,10 +125,10 @@ boton.addEventListener("click", ()=> {
                                                               <p>Precio con descuento: $${precioDescuento}</p>
                               </td>
                               <td>${cantidad}</td>
-                              <td><button id ="Eliminar${id}" class = "boton-eliminar icono2 jam jam-trash"></button></td>
-                              <td> <button id ="Restar${id}" class = "boton-resta  icono2 jam jam-minus"></button> </td>
-                              <td> <button id ="Sumar${id}" class = "boton-suma  icono2 jam jam-plus"></button> </td>
-                          `;
+                      <td><button id ="Eliminar${id}" class = "boton-eliminar icono2 jam jam-trash"></button></td>
+                      <td> <button id ="Restar${id}" class = "boton-resta  icono2 jam jam-minus"></button> </td>
+                      <td> <button id ="Sumar${id}" class = "boton-suma  icono2 jam jam-plus"></button> </td>
+      `;
       contenedorCarrito.append(row);
     
         // Eliminar reserva del carrito
@@ -128,10 +136,10 @@ boton.addEventListener("click", ()=> {
 
         botonEliminar.addEventListener("click", () => {
           console.log("Apretando en el boton eliminar");
-          reservasCarrito = reservasCarrito.filter((reserva) => reserva.id !== id); 
+          paquetesCarrito = paquetesCarrito.filter((reserva) => reserva.id !== id); 
 
           hacerCarrito();
-          console.log(reservasCarrito);
+          console.log(paquetesCarrito);
         });
 
       // Sumar y restar cantidades 
@@ -141,35 +149,36 @@ boton.addEventListener("click", ()=> {
       // BOTON MAS 
       botonMas.addEventListener('click', ()=>{
             console.log("apretando en mas");
-            for(let i = 0; i < reservasCarrito.length; i++){
-              if(reservasCarrito[i].id === id){
-                reservasCarrito[i].cantidad++;
-                reservasCarrito[i].precio = reservasCarrito[i].precioBase * reservasCarrito[i].cantidad;
-                reservasCarrito[i].precioDescuento = reservasCarrito[i].precioDescuentoBase * reservasCarrito[i].cantidad;
+            for(let i = 0; i < paquetesCarrito.length; i++){
+              if(paquetesCarrito[i].id === id){
+                paquetesCarrito[i].cantidad++;
+                paquetesCarrito[i].precio = paquetesCarrito[i].precioBase * paquetesCarrito[i].cantidad;
+                paquetesCarrito[i].precioDescuento = paquetesCarrito[i].precioDescuentoBase * paquetesCarrito[i].cantidad;
               }
             }
             hacerCarrito();
-            console.log(reservasCarrito);
+            console.log(paquetesCarrito);
       });
 
       // BOTON MENOS 
       botonMenos.addEventListener('click', ()=>{
         console.log("apretando en menos");
-        for(let i = 0; i < reservasCarrito.length; i++){
-          if(reservasCarrito[i].id === id){
-            reservasCarrito[i].cantidad -= 1;
-            reservasCarrito[i].precio = reservasCarrito[i].precioBase * reservasCarrito[i].cantidad;
-            reservasCarrito[i].precioDescuento = reservasCarrito[i].precioDescuentoBase * reservasCarrito[i].cantidad;
+        for(let i = 0; i < paquetesCarrito.length; i++){
+          if(paquetesCarrito[i].id === id){
+            paquetesCarrito[i].cantidad -= 1;
+            paquetesCarrito[i].precio = paquetesCarrito[i].precioBase * paquetesCarrito[i].cantidad;
+            paquetesCarrito[i].precioDescuento = paquetesCarrito[i].precioDescuentoBase * paquetesCarrito[i].cantidad;
 
           }
-          if(reservasCarrito[i].cantidad <= 0){
-            reservasCarrito.splice(i,1);
+          if(paquetesCarrito[i].cantidad <= 0){
+            paquetesCarrito.splice(i,1);
           }
         }
         hacerCarrito();
       }); 
 
-      console.log(reservasCarrito);
+
+      console.log(paquetesCarrito);
     });// Aca termina el for each
   }
   hacerCarrito(); 
@@ -197,7 +206,7 @@ agregoDestinoAlInput.addEventListener("click", (e)=>{
       destino1.value = `${infoReserva.titulo}`;
     }
   }
-  window.location.href='#'
+  window.location.href='/index.html#contenedorReserva'
 });
 
 // FUNCIONES
@@ -244,9 +253,9 @@ function borrarDatos (){
 
 // Vaciar el carrito
 vaciarCarritoBtn.addEventListener("click", ()=>{
-  reservasCarrito = []; // reseteamos el carrito
+  paquetesCarrito = []; // reseteamos el carrito
   limpiarHTML(); // eliminamos todo del HTML
-  console.log(reservasCarrito);
+  console.log(paquetesCarrito);
   // localStorage.reservasCarrito.clear();
 });
 
@@ -256,3 +265,11 @@ function limpiarHTML() {
     contenedorCarrito.removeChild(contenedorCarrito.firstChild);
   }
 };
+
+
+          /*                       <td>${destino}</td>
+                              <td>${precioDescuento}</td>
+                              <td>${cantidad}</td>
+                              <td><button id ="Eliminar${id}" class = "boton-eliminar icono2 jam jam-trash"></button></td>
+                              <td> <button id ="Restar${id}" class = "boton-resta  icono2 jam jam-minus"></button> </td>
+                              <td> <button id ="Sumar${id}" class = "boton-suma  icono2 jam jam-plus"></button> </td> */

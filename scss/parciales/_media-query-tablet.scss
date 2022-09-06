@@ -30,7 +30,7 @@
         padding: 0;
     }
     nav ul li{
-        font-size: 14px;
+        font-size: 16px;
         margin-bottom: 4px;
         margin-top: 5px;
     }
@@ -40,7 +40,7 @@
         transform: translate(-80px, -25px);
         text-align: center;
         border-radius: 0.375rem;
-        font-weight: bold;
+        // font-weight: bold;
         border: 1px solid #9CA4A8;
         background: transparent;
         color: #fff;
@@ -49,13 +49,14 @@
         padding: 0;
         width: 30px;
         margin: 0;
+        font-size: 1.2rem;
     }
     .barra-busqueda{
         display: none;
     }
     .boton-buscar{
         margin: 0;
-        font-size: 12px;
+        font-size: 1.2rem;
         width: 20px;
     }
     .boton{
@@ -63,11 +64,15 @@
         width: 30px;
         margin: 0;
         margin-right: 5px;
+        font-size: 1.2rem;
     }
     .contenedor_botones{
         position: absolute;
         right: 0;
         transform: translate(-5px, -25px);
+    }
+    .icono{
+        font-size: 1.2rem;
     }
 
     // home y reserva

@@ -45,7 +45,7 @@ function loguearte (){
             
             Toast.fire({
                 icon: 'success',
-                title: 'Felicitaciones! Has creado tu cuenta con exito! Te regalamos un cupon del 20% en tu reserva ingresando "VIAJE-YA".'
+                title: 'Felicitaciones! Has creado tu cuenta con exito! Te regalamos un cupon del 20% en tu reserva ingresando "VIAJE-YA".  Inicia Sesión!'
             })
 
             //Creo los usarios como objetos para luego pushearlos
@@ -59,7 +59,7 @@ function loguearte (){
             localStorage.getItem("nombre");
 
             localStorage.setItem("email", email.value);
-            localStorage.getItem("email");
+
 
             localStorage.setItem("clave", contrasenia.value);
         }
@@ -75,7 +75,6 @@ function loguearte (){
 
     const boton2 = document.getElementById("botonInicioSesion");
 
-
     boton2.addEventListener("click", () => {
 
         // Ternario
@@ -86,8 +85,9 @@ function loguearte (){
         }) : null;
         
         // TERNARIO
-        contrasenia1Valida = localStorage.getItem("clave");
-            contrasenia1Valida != contrasenia2.value ? Swal.fire({
+        let contrasenia1Valida = localStorage.getItem("clave");
+        let email1Valido = localStorage.getItem("email");
+            contrasenia1Valida != contrasenia2.value &&  email1Valido != email2.value ? Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
                 text: 'Contraseña incorrecta. Intente nuevamente.',
@@ -97,7 +97,7 @@ function loguearte (){
                 title: `Bienvenido ${localStorage.nombre}`,
                 showConfirmButton: false,
                 timer: 1500
-            }), setTimeout(function(){window.location.href = "../index#contenedorReserva.html"}, 2000);  ;
+            }), setTimeout(function(){window.location.href = "/index.html"}, 2000);  ;
 
         email2.value = "";
         contrasenia2.value ="";

@@ -22,6 +22,10 @@
         width: 30px;
         margin: 0;
         margin-right: 10px;
+        font-size: 20px;
+    }
+    .icono{
+        font-size: 20px;
     }
     nav{
         display: block;
@@ -73,7 +77,7 @@
     }
     .logo__enlace{
         text-align: center;
-        font-size: 18px;
+        font-size: 20px;
         margin-left: 10px;
         margin-bottom: 0;
     }
@@ -166,6 +170,11 @@
         width: 100%;
     }
 
+
+    // CONTACTO
+    .boton_contacto_flex{
+        margin-bottom: 3rem;
+    } 
     //FOOTER
     footer{
         bottom: 0;
@@ -206,6 +215,13 @@
         padding: 10px;
     }
     .tbody td{
-        padding: 0.3rem;
+        padding: 0.1rem;
+        font-size: 14px;
+    }
+    th{
+        font-size: 16px;
+    }
+    .icono2{
+        font-size: 16;
     }
 }

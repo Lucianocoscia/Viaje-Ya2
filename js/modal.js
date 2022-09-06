@@ -23,7 +23,7 @@ const abrirBotonUsuario = document.getElementById("open1");
 const cerrarBotonUsuario = document.getElementById("cerrar2");
 
 abrirBotonUsuario.addEventListener("click", () =>{
-    // alert("Cuenta: Luciano");
+
     let emailCargado = localStorage.getItem("email");
     Swal.fire({
         icon: 'info',
