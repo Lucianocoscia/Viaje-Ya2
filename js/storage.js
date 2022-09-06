@@ -32,4 +32,3 @@ function alertaNoHayStorage (){
         'info'
     )
 }
-

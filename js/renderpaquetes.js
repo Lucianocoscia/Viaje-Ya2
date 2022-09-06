@@ -16,7 +16,3 @@ fetch("../json/paquetes.json")
         contenedorPaquetes.append(div);
     }
 });
-
-
-
-

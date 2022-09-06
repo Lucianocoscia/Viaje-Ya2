@@ -24,5 +24,3 @@ botonBuscar.addEventListener("click", () =>{
 
     barraBusqueda.value = "";
 });
-
-

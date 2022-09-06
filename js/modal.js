@@ -1,4 +1,3 @@
-
 // aca tengo tengo funcionalidad de abrir y cerrar carrito 
 const modalContenedor = document.querySelector("#carrito");
 
