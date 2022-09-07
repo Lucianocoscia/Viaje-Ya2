@@ -7,7 +7,7 @@ fetch("./json/paquetes-populares.json")
         const div = document.createElement("div");
         div.classList.add("cards");
 
-        div.innerHTML += `<img class="card__img" src="${paquete.img}"  alt="Cancún">
+        div.innerHTML += `<img class="card__img" src="${paquete.img}"  alt="${paquete.destino}">
                         <h2 class="card__titulos">${paquete.destino}</h2>
                         <div class="flexrow">
                         <span>$</span><p>${paquete.precio}</p>

@@ -7,7 +7,7 @@ fetch("./json/paquetes.json")
     for (const paquete of paquetes) {
         const div = document.createElement("div");
         div.classList.add("paquete__item")
-        div.innerHTML += `<img class="paquete__img" src="${paquete.img}"  alt="Cancún">
+        div.innerHTML += `<img class="paquete__img" src="${paquete.img}"  alt="${paquete.destino}">
                         <div class="displayRow">
                             <h2 class="absolute">${paquete.destino}</h2>
                             <button id= "agregoDestino"  class="agregar-destino botonDestino">Consultar</button> 
