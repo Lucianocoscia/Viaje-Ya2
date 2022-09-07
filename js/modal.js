@@ -35,7 +35,7 @@ abrirBotonUsuario.addEventListener("click", () =>{
         cancelButtonText: 'Cancelar'
         }).then((result) => {
             if (result.isConfirmed) {
-                window.location.href = "registro-sesion.html"
+                window.location.href = 'pages/registro-sesion.html'
             } else if (result.isDenied) {
                 localStorage.clear();
                 Swal.fire('Se ha cerrado la sesion', '', 'info')
