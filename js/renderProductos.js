@@ -1,6 +1,6 @@
 const contenedorPaquetes = document.getElementById("card");
 
-fetch("../json/paquetes-populares.json")
+fetch("./json/paquetes-populares.json")
 .then(response => response.json())
 .then(paquetes => {
     for (const paquete of paquetes){
@@ -13,7 +13,7 @@ fetch("../json/paquetes-populares.json")
                         <span>$</span><p>${paquete.precio}</p>
                         </div>
                         <span> Descripción: ${paquete.desc}</span>
-                        <button class="boton1 agregar-carrito" data-id="${paquete.id}" type="submit">Comprar<span class="span0"></span></button>
+                        <button class="boton1 agregar-carrito" data-id="${paquete.id}" type="submit">Comprar</button>
                         `
         contenedorPaquetes.appendChild(div);
     }
