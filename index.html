@@ -10,6 +10,8 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
     />
+    <!-- Link data aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Link google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -95,9 +97,9 @@
     <main>
 <!-- IMG principal -->
       <section>
-        <div class="home__contenedor">
-          <h1 class="contenedor__titulo">Explora tu nuevo destino</h1>
-          <p class="contenedor__parrafo">
+        <div  class="home__contenedor">
+          <h1 data-aos="fade-in" data-aos-duration="2000" class="contenedor__titulo">Explora tu nuevo destino</h1>
+          <p  data-aos="fade-in" data-aos-duration="2000" class="contenedor__parrafo">
             Encontra tu proximo destino en Viaje-YA, los mejores lugares, 
             paquetes y precios!
           </p>
@@ -105,7 +107,7 @@
       </section>
 
 <!-- Reserva -->
-      <section>
+      <section data-aos="fade-up" data-aos-duration="2000">
         <div  class="reserva__contenedor1">
           <div id="contenedorReserva" class="contenedor__form1">
             <div class="form1__divs">
@@ -153,8 +155,8 @@
       </section>
 
 <!-- Seccion Lugares populares -->
-      <section id="lugares-populares">
-        <div id="lista-paquetes" class="contenedor__lugares">
+      <section  id="lugares-populares">
+        <div data-aos="fade-up" data-aos-duration="2500" id="lista-paquetes" class="contenedor__lugares">
           <div class="lugares_titulo">
             <h2>
               Conoce Argentina! Estos son los lugares mas populares de nuestro
@@ -168,29 +170,29 @@
 
 <!-- grid del medio -->
       <section>
-        <div class="grid">
-            <div class="grid_hijo1">
-              <div class="flex">
+        <div style="overflow:hidden" class="grid">
+            <div   class="grid_hijo1">
+              <div data-aos="fade-right" data-aos-duration="2500" class="flex">
                 <h2>Elegi Donde</h2>
                 <p>Contamos con mas de 100 destinos para que elijas.</p>
               </div>
             </div>
             <div class="grid_hijo2">
-              <img  class="grid_img" src="./images/trip.jpg" alt="">
+              <img data-aos="fade-right" data-aos-duration="2500" class="grid_img" src="./images/trip.jpg" alt="">
             </div>
         </div>
         <hr class="hr_grid">
-        <div class="grid2">
+        <div style="overflow:hidden" class="grid2">
           <div class="grid_hijo3">
-            <img class="grid_img"  src="./images/aeropuerto.jpg"  alt="">
+            <img data-aos="fade-left" data-aos-duration="2500" class="grid_img"  src="./images/aeropuerto.jpg"  alt="">
           </div>
           <div class="grid_hijo4">
-            <div class="flex">
+            <div data-aos="fade-left" data-aos-duration="2500" class="flex">
               <h2>Free Shop</h2>
               <p>Con tu compra en Viaje-Ya tenes un 15% de descuento en el Free Shop</p>
             </div>
 
-          </div>
+        </div>
 <!--           <hr class="hr_grid">
         <div class="grid2">
           <div class="grid_hijo">
@@ -208,7 +210,7 @@
 
       </section>
       <hr class="hr_grid">
-      <section class="home__contenedor2">
+      <section data-aos="fade-in" data-aos-duration="2500" class="home__contenedor2">
         <div class="div__flex">
             <div class="flex_column1">
               <span class="flex_column1-icon material-symbols-outlined">
@@ -229,7 +231,7 @@
     </section>
       <hr class="hr_grid">
 <!-- Muestro los paquetes  -->
-      <section>
+      <section data-aos="fade-up" data-aos-duration="2500">
         <h5 class="paquetes_titulo">Descubri todos los destinos que tenemos para vos!</h5>
         <div class="paquetes__contenedor">
           <div>
@@ -352,5 +354,12 @@
     <script src="./js/modal.js" type="module"></script>
 <!-- busqueda -->
 <script src="./js/busqueda.js" type="module"></script>
+
+<!-- Script data aos -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
   </body>
 </html>
