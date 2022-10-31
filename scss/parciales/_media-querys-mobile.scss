@@ -17,6 +17,10 @@
         transform: translateX(5px);
         border: transparent;
     }
+    .menu:hover{
+        background-color: transparent;
+        color: #fff;
+    }
     .boton{
         padding: 0;
         width: 30px;
@@ -46,7 +50,7 @@
     #lateral {
         display: block;
         background-color: #212529b6;/* rgba(0, 0, 0, 0.8) */
-        width: 80%;
+        width: 50%;
         height: 100vh;
 
         position: fixed;
@@ -54,13 +58,14 @@
         left: -100%;
         z-index: 100 ;
 
-        transition: left 1s;
+        transition: left 1s ease-in-out;
     }
     #lateral:target{
         left: 0;
 
         color: #fff;
     }
+
     .span-icon{
         font-size: 2rem;
     }
@@ -88,7 +93,7 @@
 
     //HOME
     .home__contenedor{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../images/paisaje00.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../../images/paisaje02.jpg);
         // background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(images/paisaje00.jpg);
         background-position: center;
         background-size: cover;
@@ -213,7 +218,7 @@
 
     //CARRITO
     .carrito-visible{
-        min-width: 100%;
+        min-width: 60%;
     }
     .boton_cerrar{
         width: 100px;
@@ -225,6 +230,7 @@
     }
     th{
         font-size: 16px;
+        padding: 0.5rem;
     }
     .icono2{
         font-size: 16;
