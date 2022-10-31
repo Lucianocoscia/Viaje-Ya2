@@ -159,7 +159,7 @@ nav ul li a:hover {
 
 /* Seccion img con texto encima */
 .home__contenedor {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/paisaje00.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/australia2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1065,7 +1065,7 @@ footer a:hover {
     visibility: hidden;
   }
   .home__contenedor {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/paisaje02.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/australia2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
