@@ -88,12 +88,12 @@
 
     //HOME
     .home__contenedor{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../../images/paisaje00.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../images/paisaje00.jpg);
         // background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(images/paisaje00.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        // background-attachment: fixed;
         height: 91vh;
     }
     .contenedor__titulo{
