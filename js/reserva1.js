@@ -206,7 +206,8 @@ agregoDestinoAlInput.addEventListener("click", (e)=>{
       destino1.value = `${infoReserva.titulo}`;
     }
   }
-  window.location.href='index.html#contenedorReserva'
+  window.location.href='#'
+
 });
 
 // FUNCIONES

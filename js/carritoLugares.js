@@ -1,5 +1,5 @@
 const carrito = document.querySelector("#carrito");
-const contenedorCarrito = document.querySelector("#lista-carrito tbody");
+const contenedorCarrito = document.querySelector("#lista-carrito");
 const vaciarCarritoBtn = document.querySelector("#vaciar-carrito");
 const listaPaquetes = document.querySelector("#lista-paquetes");
 
@@ -22,16 +22,7 @@ function agregarPaquete (e){
 
 }
 
-// Elimina paquete del carrito
-/* function eliminarPaquete (e){
-    if(e.target.classList.contains("boton-eliminar")){
-        const paqueteId = e.target.getAttribute("data-id");
-        //Elimina del arreglo de paquetesCarrito por el data-id
-        paquetesCarrito = paquetesCarrito.filter (  paquete => paquete.id !== paqueteId);
 
-        carritoHTML(); //iterar sobre el carrito y mostrar su HTML
-    }
-} */
 
 // funcion para limpiar el carrito
 function limpiarHTML(){
@@ -75,19 +66,42 @@ function carritoHTML (){
     paquetesCarrito.forEach( paquete => {
 
         // optimizando con variables
-        const { titulo, precio, cantidad, id } = paquete;
+        const { titulo, precio, cantidad, id, imagen  } = paquete;
 
-        const row = document.createElement("tr");
-        row.innerHTML = `
-                        <td>${titulo}</td>
-                        <td>${precio}</td>
-                        <td>${cantidad}</td>
-                        <td><button id ="Eliminar${id}" class = "boton-eliminar icono2 jam jam-trash"></button></td>
-                        <td> <button id ="Restar${id}" class = "boton-resta  icono2 jam jam-minus"></button> </td>
-                        <td> <button id ="Sumar${id}" class = "boton-suma  icono2 jam jam-plus"></button> </td>
+        const div = document.createElement("div");
+        div.innerHTML = `
+                        <hr className='hr-cart'></hr>
+                        <div  class=' grid-principal'>
+                            <div class='grid-hijo'>
+                                <img style="width: 100px; height: 100px; object-fit: cover;"
+                                src= "${imagen}"
+                                alt="${titulo}"/>
+                            </div>
+
+                            <div class='grid-hijo2'>
+                                <div class='div-detalle'> 
+      
+                                    <h5>${titulo}</h5>
+                                    <button id ="Restar${id}" class = "boton-resta icono2">-</button>
+                                    <p >${cantidad}</p>
+                                    <button id ="Sumar${id}" class = "boton-suma  icono2 ">+</button>
+                                </div>
+
+                                <div class='div-precio'>
+                                    <button id ="Eliminar${id}" class = "boton-eliminar "><img src="./images/garbage-bin.gif" class="icono2" alt="trash"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="contenedor-suma" >
+                            <p class="fw-bold" >Subtotal</p>
+                            <p>${precio}</p>
+                        </div>
+
+
                         `;
         // Agrega el html del carrito en el tbody
-        contenedorCarrito.append(row);
+        contenedorCarrito.append(div);
 
         // Eliminar reserva del carrito
         const botonEliminar = document.getElementById(`Eliminar${id}`);
@@ -187,6 +201,9 @@ function leerDatosPaquete(paquete){
 } 
 carritoHTML();
 
+
+
+
 /* contenedorCarrito.addEventListener("click", (e) =>{
     const mas = e.target.classList.contains("boton-suma");
     const menos = e.target.classList.contains("boton-resta");
@@ -212,3 +229,24 @@ carritoHTML();
 /*                         <td> <button data-id ="${id}" class = "boton-eliminar icono2 jam jam-trash"></button> </td>
                         <td> <button data-id ="${id}" class = "boton-resta  icono2 jam jam-minus"></button> </td>
                         <td> <button data-id ="${id}" class = "boton-suma  icono2 jam jam-plus"></button> </td> */
+
+// Elimina paquete del carrito
+/* function eliminarPaquete (e){
+    if(e.target.classList.contains("boton-eliminar")){
+        const paqueteId = e.target.getAttribute("data-id");
+        //Elimina del arreglo de paquetesCarrito por el data-id
+        paquetesCarrito = paquetesCarrito.filter (  paquete => paquete.id !== paqueteId);
+
+        carritoHTML(); //iterar sobre el carrito y mostrar su HTML
+    }
+} */
+
+
+/*                            
+                        <td>${titulo}</td>
+                        <td>${precio}</td>
+                        <td>${cantidad}</td>
+                        <td><button id ="Eliminar${id}" class = "boton-eliminar icono2 jam jam-trash"></button></td>
+                        <td> <button id ="Restar${id}" class = "boton-resta  icono2 jam jam-minus"></button> </td>
+                        <td> <button id ="Sumar${id}" class = "boton-suma  icono2 jam jam-plus"></button> </td>
+ */

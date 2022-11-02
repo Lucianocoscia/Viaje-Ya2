@@ -1,30 +1,108 @@
 /* Seccion img con texto encima */
 
 .home__contenedor{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../../images/australia2.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     width: 100%;
-    height: 530px;
+    height:100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #FFFFFF;
+    z-index: -1;
+}
+.img-carousel{
+    width: 100%;
+    object-fit: cover;
+    height: 95vh;
+    filter: brightness(68%)
+}
+.titulo-home{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+}
+.titulo-home h1{
+    margin: 0.3rem;
+    font-size: 40px;
+}
+.titulo-home p{
+    margin: 0.5rem;
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+.boton-reservar{
+    border: none;
+    background-color:#e8e8e4;
+    background-color:#ddddd7a2;
+    margin: 1rem;
+    width: 250px;
+    height: 18%;
+    text-transform: uppercase;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    padding: 8px 15px;
+    border-radius: 0.375rem;
+    color: #fff;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+.boton-reservar:hover{
+    background-color:#ddddd7c6;
 }
 
+// Busqueda
+
+.contenedor-busqueda{
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+    // background-color: #e8e8e4;
+    // background-color: #edf2f4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-busqueda-div{
+    padding: 1rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+
+
+}
+.titulo-busqueda{
+    padding: 1rem;
+    color: #1e1e1e;
+}
+
+
+.contenedor-flex-busqueda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.barra-input{
+    width: 70%;
+}
+
+
 // seccion login
+
 .home__contenedor2{
-    height: 35vh;
-    margin-left: 5%;
-    margin-right: 5%;
+    height: 100%;
+    padding: 1rem;
+    margin-bottom: 4rem;
+    background-color: #f8f8f8;
+    box-shadow: 0 0px 6px 0 rgba(32,33,36,0.28);
 }
 .div__flex{
     display: flex;
     flex-direction: row;
-
+    margin-left: 5%;
+    margin-right: 5%;
     justify-content: space-around;
     align-items: center;
     height: 100%;
@@ -34,7 +112,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 .flex_column1-p, .flex_column1-a{
     margin-top: 1rem;
@@ -53,18 +131,19 @@
     padding: 8px 0;
     text-align: center;
     border-radius: 0.375rem;
-    border: 1px solid #9CA4A8;
-    background: transparent;
+    border: none;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    background: #fff;
     color: #000;
     cursor: pointer;
 }
 .flex_column1-a:hover{
     color: #fff;
-    background-color: #98A1A6;
+    background-color: #bfbfbb8f;
 }
 .flex_column-a:hover{
     text-decoration: underline;
-    color: #98A1A6;
+    color: #e2ebf3;
 }
 .contenedor__titulo{
     font-weight: 400;
@@ -74,7 +153,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid #98A1A6;
+    border: 1px solid #e2ebf3;
     height: 450px;
     width: 350px;
     padding: 2rem;
@@ -107,14 +186,16 @@
     padding: 15px 0;
     text-align: center;
     border-radius: 0.375rem;
-    border: 1px solid #9CA4A8;
+    // border: 1px solid #9CA4A8;
+    border: none;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
     background: transparent;
     color: #000;
     cursor: pointer;
     transition: .4s;
 }
 .flex_column-login button:hover{
-    background-color: #98A1A6;
+    background-color: #e2ebf3;
     color: #fff;
 }
 .titulo-login{

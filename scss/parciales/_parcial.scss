@@ -5,13 +5,14 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background: #e9e9ec;
+    background: #ffff;
+
 }
 body::-webkit-scrollbar{
     width: 10px;
     height: 8px; 
 }
 body::-webkit-scrollbar-thumb{
-    background-color: #9CA4A8;
+    background-color: #343637;
     border-radius: 2px;
 }

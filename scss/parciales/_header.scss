@@ -1,21 +1,30 @@
 /*  HEADER */
 
 header {
-    top: 0;
     height: 9vh;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #212529;
-    color: #F5F5F5;
-    /* position: sticky; */
+    // margin-bottom: 4rem;
+    background-color: rgba(245, 245, 245, 0.74);
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    // background-color: #ffff;
+    color: #000;
+    // position: absolute;
+    z-index: 10;
+    top: 0;
+}
+.img-logo{
+    height: 20vh;
+    width: 100%;
+    // width: ;
 }
 .logo__enlace{
     font-size: 22px;
     font-weight: 700;
-    color: #F5F5F5;
+    color: #000;
     text-align: center;
     text-decoration: none;
     margin-left: 1rem;
@@ -53,7 +62,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     transition: 0.5s;
 }
@@ -64,8 +73,8 @@ nav ul li a:hover {
 
 }
 .icono{
-    font-size: 1rem;
-    color: #fff;
+    font-size: 1.2rem;
+    color: #000;
 
 }
 .contador{
@@ -80,15 +89,17 @@ nav ul li a:hover {
     text-align: center;
     border-radius: 0.375rem;
     font-weight: bold;
-    border: 1px solid #9CA4A8;
+    border: none;
     background: transparent;
-    color: #fff;
+    color: #000;
     cursor: pointer;
     transition: .4s;
 }
 .boton:hover{
-    background-color:#98A1A6 ;
+    // background-color:#bce7ff ;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
 }
+
 /* Barra de busqueda */
 
 .barra-busqueda{
@@ -96,16 +107,21 @@ nav ul li a:hover {
     width: 200px;
     border-radius: 2px;
     padding: .2rem;
-    border: 1px solid #9CA4A8;
+    border: none;
     background-color: #ffff;
     color: #000;
+    transition: .4s ease-in-out;
+}
+.barra-busqueda:hover{
+    // border: 1px solid #fff;
+    box-shadow: 1px 1px;
 }
 .boton-buscar{
     background: transparent;
     border: transparent;
     cursor: pointer;
     width: 50px;
-    color: #fff;
+    color: #000;
     margin-left: .2rem;
     transition: .4s;
 }

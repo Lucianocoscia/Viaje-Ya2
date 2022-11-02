@@ -1,76 +1,68 @@
 /* Seccion Contacto */
 
-.contenedor__contacto{
-    margin-top: 3rem;
+/* Contacto */
+
+.seccion-form{
+    height: 100vh; /* si quiero q complete la vista  */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f3f4;
+    padding-bottom: 4rem;
+    margin-top: 4rem;
+    padding-top: 4rem;
 }
-.contendor_form{
-    min-height: 60vh;
-    margin-top: 3rem;
+.contenedor-form-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // text-align: center;
+    padding: 2rem;
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+}
+.titulo-contacto{
+    font-size: 34px;
+    text-align: center;
+    padding: 1rem;
+}
+.contenedor-label-input{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.contenedor-label-input label, .contenedor-label-input input{
+    padding: 0.5rem;
+
+}
+.form-control{
+    margin-bottom: 1rem;
+}
+.contenedor-btn-contacto{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-.flex_column{
-    display: flex;
-    flex-direction: column;
-}
-.contenedor__form h2 {
+.boton-form{
     text-align: center;
-}
-
-.contenedor__form p {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin-top: .8rem;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: .8rem;
-}
-
-p label {
-    text-align: center;
-    margin-bottom: 1rem;
-    color: #000;
-}
-
-p input {
-    text-align: start;
-    width: 100%;
-    border-radius: 2px;
-    padding: .3rem;
-    border: 1px solid #9CA4A8;
-    background-color: #ffff;
-    color: #000;
-}
-
-p textarea {
-    text-align: start;
-    width: 100%;
-    background-color: #ffff;
-    padding: .3rem;
-}
-
-.contenedor__form p button {
-    text-align: center;
-    width: 200px;
-    padding: 15px 0;
-    margin: 20px 10px;
-    text-align: center;
+    
+    border: none;
+    background-color:#e8e8e4;
+    background-color:#fff;
+    margin: 1rem;
+    width: 250px;
+    height: 18%;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    padding: 8px 15px;
     border-radius: 0.375rem;
-    border: 1px solid #9CA4A8;
-    background: transparent;
     color: #000;
     cursor: pointer;
-    transition: .4s;
+    transition: .4s ease-in-out;
 }
-.boton_contacto_flex{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-p button:hover {
-    background-color: #98A1A6;
+.boton-form:hover{
+    background-color:#ddddd7c6;
     color: #fff;
+
 }

@@ -1,4 +1,4 @@
-// aca tengo tengo funcionalidad de abrir y cerrar carrito 
+/* // aca tengo tengo funcionalidad de abrir y cerrar carrito 
 const modalContenedor = document.querySelector("#carrito");
 
 const abrirCarrito = document.getElementById("open");
@@ -14,7 +14,7 @@ cerrarCarrito.addEventListener('click', ()=>{
     modalContenedor.classList.remove('carrito-visible')
 
 })
-
+ */
 
 // aca tengo funcionalidad de abrir y cerraR cuenta
 const modalContenedorUsuario = document.getElementById("usuario");

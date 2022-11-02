@@ -1,13 +1,13 @@
 /* Seccion Galeria  */
 
 .grid {
+    // background-color: #e9ecef;
     height: 60vh;
     display: grid;
     grid-template-columns: 50vw 40vw ;
     grid-template-rows: repeat(1, 1fr);
-    /* grid-template-areas: "ele1 ele2" ; */
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-bottom: 4rem;
 }
 .grid2{
@@ -16,7 +16,6 @@
     grid-template-columns: 40vw 50vw ;
     grid-template-rows: repeat(1, 1fr);
     justify-content: center;
-    /* align-items: center; */
     margin-top: 2rem;
     margin-bottom: 4rem;
 }
@@ -35,7 +34,6 @@
     height: 100%;
 }
 .hr_grid{
-    /* width: 80%; */
     margin-left: 5%;
     margin-right: 5%;
 }

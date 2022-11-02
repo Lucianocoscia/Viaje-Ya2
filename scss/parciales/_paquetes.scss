@@ -1,17 +1,21 @@
 /* // paquetes scroll */
+/* #paquetesBackground{
+    background-color: #edf2f4;
+    
+} */
 .paquetes_titulo{
     text-align: center;
     font-size: 25px;
-    margin:2rem;
+    padding-top:3rem;
 }
 .paquetes__contenedor_titulo{
     text-align: center;
-
 }
 .paquetes__contenedor {
     max-width: 1350px;
     margin: 0 auto;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
+    margin-bottom: 3rem;
     overflow: hidden;
 }
 
@@ -20,8 +24,6 @@
     flex-direction: row;
     gap: 1rem;
     overflow: auto;
-    /* height: 500px; */
-
     scrollbar-color: #1e1e1e;
     scrollbar-width: none;
 
@@ -71,15 +73,15 @@
     padding: 15px 0;
     text-align: center;
     border-radius: 0.375rem;
-    /* font-weight: bold; */
-    border: 1px solid #9CA4A8;
-    background: transparent;
+    border: none;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    background: #fff;
     color: #000;
     cursor: pointer;
-    transition: .4s;
+    transition: .4s ease-in-out;
 }
 
 .botonDestino:hover{
-    background-color:#98A1A6 ;
+    background-color:#bfbfbb8f;
     color: #fff;
 }
