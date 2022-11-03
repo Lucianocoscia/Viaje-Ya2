@@ -4,7 +4,7 @@ const barraBusqueda = document.getElementById("barraDeBusqueda");
 
 const botonBuscar = document.getElementById("buscar")
 
-botonBuscar.addEventListener("click", () =>{
+barraBusqueda.addEventListener("keypress", () =>{
     barraBusqueda.value === "" ? alert(`Lo sentimos no encontramos ningun destino con el nombre " ${barraBusqueda.value} "` ) : null;
 
     let busqueda = paquetes00.find( el => el.destino === barraBusqueda.value) ;

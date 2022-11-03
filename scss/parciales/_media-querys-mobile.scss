@@ -6,89 +6,36 @@
     header{
         height: 12vh;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-evenly;
         align-items: center;
-        position: relative;
+        // position: relative;
     }
     .menu{
         display: block;
-        position: absolute;
-        left: 0;
-        transform: translateX(5px);
+        // position: absolute;
+        // left: 0;
+        // transform: translateX(5px);
         border: transparent;
     }
     .menu:hover{
         background-color: transparent;
         color: #fff;
     }
-    .boton{
-        padding: 0;
-        width: 30px;
-        margin: 0;
-        margin-right: 10px;
-        font-size: 20px;
-    }
-    .icono{
-        font-size: 20px;
-    }
     nav{
-        display: block;
+        display: none;
     }
-    .contenedor_busqueda_botones{
-        display: block;
-    }
-    nav ul{
-        display: flex;
-        flex-direction: column;
-        font-size: 16px;
-    }
-    nav ul li{
-        padding-bottom: 0.5rem;
-        padding-top: 0.5rem;
-    }
-
-    #lateral {
-        display: block;
-        background-color: #212529b6;/* rgba(0, 0, 0, 0.8) */
-        width: 50%;
-        height: 100vh;
-
-        position: fixed;
-        top: 0;
-        left: -100%;
-        z-index: 100 ;
-
-        transition: left 1s ease-in-out;
-    }
-    #lateral:target{
-        left: 0;
-
-        color: #fff;
-    }
-
-    .span-icon{
-        font-size: 2rem;
-    }
-    .span-icono-close{
-        font-size: 16px;
-        visibility: visible;
-        // display: block;
-    }
-
-    .contenedor_botones{
-        position: absolute;
-        right: 0;
-        transform: translate(0,-25px);
+    .ol, ul{
+        padding: 0;
     }
     .logo__enlace{
-        text-align: center;
-        font-size: 20px;
-        margin-left: 10px;
+        // text-align: center;
+        // font-size: 100%;
+        // margin-left: 10px;
         margin-bottom: 0;
     }
-    .tablet_div-boton{
-        // transform: translate(-90px, -25px);
-        visibility: hidden;
+    .img-logo{
+        transform: translateX(20%);
     }
 
     //HOME
@@ -101,18 +48,37 @@
         // background-attachment: fixed;
         height: 91vh;
     }
-    .contenedor__titulo{
-        // font-size: 24px;
-        text-align: center;
-        transform: translateY(200px);
-        // visibility: hidden;
+    .carousel-caption{
+        right: unset;
+        left: unset;
+
     }
-    .contenedor__parrafo{
-        // text-align: center;
-        visibility: hidden;
+    .titulo-home{
+        // top: none;
+        // position: unset;
+        top: unset;
+        width: 100%;
+    }
+    .titulo-home h1{
+        // color: #fff;
+        font-size: 2rem;
+        // width: 100%;
+    }
+    .titulo-home p{
+        font-size: 18px;
+    }
+    .boton-reservar{
+        width: 80%;
+        margin: 0;
+        // margin-left: 5%;
+        // margin-right: 5%;
+    }
+    .barra-input{
+        width:100%
     }
 
     // RESERVA
+
     .reserva__contenedor1{
         height: 80vh;
         margin-bottom: 1rem;
@@ -140,10 +106,15 @@
 
     //LUGARES POPULARES
     h2{
+        padding-top: 1rem;
         font-size: 20px;
     }
     .card__img{
         width: 100%;
+    }
+    .cards{
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
 
 
@@ -182,6 +153,9 @@
 
 
     // CONTACTO
+    .titulo-contacto{
+        font-size: 22px;
+    }
     .boton_contacto_flex{
         margin-bottom: 3rem;
     } 
@@ -191,11 +165,13 @@
         width: 100%;
         flex-direction: column;
         justify-content: center;
-        height: 12vh;
+        // align-items: center;
+        height: 100%;
     }
     footer div p{
         font-size: 14px;
         padding: 0;
+        text-align: center;;
         margin: 0;
     }
     p{

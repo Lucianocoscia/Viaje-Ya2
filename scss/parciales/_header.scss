@@ -99,7 +99,13 @@ nav ul li a:hover {
     // background-color:#bce7ff ;
     box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
 }
+.userActive{
+    color: green;
 
+}
+.btnActive{
+    box-shadow: 0 1px 6px 0 rgba(33, 243, 6, 0.28);
+}
 /* Barra de busqueda */
 
 .barra-busqueda{

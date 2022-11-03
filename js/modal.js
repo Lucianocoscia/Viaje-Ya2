@@ -17,11 +17,12 @@ cerrarCarrito.addEventListener('click', ()=>{
  */
 
 // aca tengo funcionalidad de abrir y cerraR cuenta
-const modalContenedorUsuario = document.getElementById("usuario");
-const abrirBotonUsuario = document.getElementById("open1");
-const cerrarBotonUsuario = document.getElementById("cerrar2");
 
-abrirBotonUsuario.addEventListener("click", () =>{
+/* if(localStorage){
+    // const modalContenedorUsuario = document.getElementById("usuario");
+    const abrirBotonUsuario = document.getElementById("open1");
+
+    abrirBotonUsuario.addEventListener("click", () =>{
 
     let emailCargado = localStorage.getItem("email");
     Swal.fire({
@@ -42,4 +43,31 @@ abrirBotonUsuario.addEventListener("click", () =>{
             }
     });
 
-})
+    }) 
+}else{
+    alert("tiene q iniciar sesion")
+} */
+
+
+/* abrirBotonUsuario.addEventListener("click", () =>{
+
+    let emailCargado = localStorage.getItem("email");
+    Swal.fire({
+        icon: 'info',
+        title: `Usuario: ${localStorage.nombre} 
+                Email: ${emailCargado} `,
+        showDenyButton: true,
+        confirmButtonText: 'Iniciar Sesión',
+        denyButtonText: `Cerrar Sesión`,
+        showCancelButton: true,
+        cancelButtonText: 'Cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = 'pages/registro-sesion.html'
+            } else if (result.isDenied) {
+                localStorage.clear();
+                Swal.fire('Se ha cerrado la sesion', '', 'info')
+            }
+    });
+
+}) */

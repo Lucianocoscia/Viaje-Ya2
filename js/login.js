@@ -85,9 +85,10 @@ function loguearte (){
         }) : null;
         
         // TERNARIO
-        let contrasenia1Valida = localStorage.getItem("clave");
         let email1Valido = localStorage.getItem("email");
-            contrasenia1Valida != contrasenia2.value &&  email1Valido != email2.value ? Swal.fire({
+        let contrasenia1Valida = localStorage.getItem("clave");
+
+            contrasenia1Valida != contrasenia2.value ||  email1Valido != email2.value ? Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
                 text: 'Contraseña incorrecta. Intente nuevamente.',
@@ -97,7 +98,7 @@ function loguearte (){
                 title: `Bienvenido ${localStorage.nombre}`,
                 showConfirmButton: false,
                 timer: 1500
-            }), setTimeout(function(){window.location.href = '../index.html#contenedorReserva'}, 2000);  ;
+            }), setTimeout(()=>{window.location.href = '#'}, 2000);  ;
 
         email2.value = "";
         contrasenia2.value ="";
@@ -106,6 +107,15 @@ function loguearte (){
 
 loguearte ();
 
-    
+
+/* if(localStorage.length >= 1){
+    // const modalContenedorUsuario = document.getElementById("usuario");
+
+
+    let btnUser = document.getElementById("iconoUser");
+    let btnUser1 = document.getElementById("open1");
+    btnUser.classList.add("userActive");
+    btnUser1.classList.add("btnActive");
+} */
 
 
