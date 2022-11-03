@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro - Viaje-YA</title>
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/viaje-favicon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/viaje-favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/viaje-favicon.png">
     <!-- Link google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,128 +28,80 @@
 </head>
 <body>
     <header>
-        <div class="contenedor_logo_links">
-
-            <a href="#lateral" class="boton menu"><span class="span-icon  material-symbols-outlined">
-                menu
-                </span></a>
-    <!-- logo -->
-            <a class="logo__enlace" href="../index.html"
-            >Viaje-Ya</a>
-
-    <!-- links -->
-            <nav id="lateral">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../index.html#contenedorReserva">Reservas</a></li>
-                <li><a href="../index#lugares-populares">Lugares Populares</a></li>
-                <li><a href="../index#contacto">Contacto</a></li>
-                <li><a href="#"><span class=" span-icono-close material-symbols-outlined">
-                close
-                </span></a></li>
-            </ul>
-            </nav>
-        </div> 
-
-        <div class="contenedor_busqueda_botones">
-    <!-- busqueda -->
-        <div class="tablet_div-boton mobile_div-boton">
-            <input
-            id="barraDeBusqueda"
-            class="barra-busqueda"
-            type="text"
-            placeholder="Buscar...."
-            />
-            <button id="buscar" class="boton-buscar">
-            <span class="span-icono jam jam-search"></span>
-            </button>
-        </div>
-
-    <!-- botones -->
-            <ul class="contenedor_botones">
-            <li >
-                <button class="boton" id="open" href="#">
-                <span class="icono jam jam-shopping-cart"
-                    ></span>
-                </button>
-            </li>
-            <li >
-                <button class="boton" id="open1" href="#">
-                <span class="icono jam jam-user"
-                    ></span>
-                </button>
-            </li>
-    <!--           <li>
-                <a href="#lateral" class="boton menu"><span class="span-icon  material-symbols-outlined">
-                menu
-                </span></a>
-
-            </li> -->
-            </ul>
-        </div>
-    </header>
+        <!-- logo -->
+              <a class="logo__enlace" href="../index.html"
+              ><img class="img-logo" src="../images/viaje-ya-logo-oficial.png" alt=""></a> 
+        
+              <div class="contenedor_logo_links">
+        
+                  <a href="#lateral" class="boton menu"><span class="span-icon  material-symbols-outlined">
+                    menu
+                    </span></a>
+        <!-- links -->
+                <nav id="lateral">
+                  <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#contenedorDestino">Destinos</a></li>
+                    <li><a href="#lugares-populares">Lugares Populares</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                    <li><a href="#"><span class=" span-icono-close material-symbols-outlined">
+                      close
+                      </span></a></li>
+                  </ul>
+                </nav>
+              </div> 
+        
+              <div class="contenedor_busqueda_botones">
+        <!-- botones -->
+                <ul class="contenedor_botones">
+        
+                  <li >
+                    <button class="boton" id="open1" href="#">
+                      <span class="icono jam jam-user"
+                        ></span>
+                    </button>
+                  </li>
+                  <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button> -->
+                  <li >
+                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" class="boton" id="open" href="#">
+                      <span class="icono jam jam-shopping-cart"
+                        ></span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </header>
     <main>
 
-        <section class="home__contenedor2-login">
-            <div class="div__flex">
-                <div class="flex_column2">
-                    <span class="flex_column2-icon material-symbols-outlined">
-                    account_circle
-                    </span>
-                    <div class="flex_column-login">
-                        <h4 class="titulo-login">Registro de Sesión</h4>
-    
-                        <label for="">Nombre:</label>
-                        <input id="nombre" type="text">
-    
-                        <label for="">Email:</label>
-                        <input  type="email" name="" id="email">
-    
-                        <label for="">Contraseña:</label>
-                        <input id="contrasenia" type="password">
-    
-                        <button id="botonRegistro" class="contenedor__button"><span class="span1"></span>Registrarse</button>
-                    </div>
-
+        <section class="contenedor-sesion">
+            <div class="grid-contenedor-sesion">
+                <div class="grid-contenedor-sesion-hijo">
+                    <form action="">
+                        <label for="">Nombre</label>
+                        <input type="text" class="form-control">
+                    </form>
                 </div>
-  
-                <div class="flex_column2">
-                    <span class="flex_column2-icon material-symbols-outlined">
-                        login
-                    </span>
-
-                    <div class="flex_column-login">
-                        <h4>Iniciar Sesión</h4>
-
-                        <label class="loguearte__paddings" for="">Email:</label>
-                        <input  class="loguearte__paddings" type="email" name="" id="email2">
-
-                        <label class="loguearte__paddings" for="">Contraseña:</label>
-                        <input id="contrasenia2" class="loguearte__paddings" type="password">
-                        <a class="a-login" href="">¿Olvidó su contraseña? Cambiar contraseña</a>
-                        <button id="botonInicioSesion" class="contenedor__button"><span class="span1"></span>Iniciar Sesion</button>
-                    </div>
+                <div class="grid-contenedor-sesion-hijo">
+                    
                 </div>
             </div>
         </section>
-        <hr class="hr_grid">
 
-            <!-- Carrito -->
-        <div id="carrito" class="carrito">
-            <table id="lista-carrito">
-            <thead>
-                <tr>
-                <th>Nombre</th>
-                <th>Precio</th>
-                <th>Cantidad</th>
-                </tr>
-            </thead>
-            <tbody class="tbody"></tbody>
-            </table>
-            <a class="vaciar-carrito" href="#" id="vaciar-carrito"
-            >Vaciar Carrito</a
-            >
-            <button class="boton_cerrar" id="cerrar">Cerrar</button>
+        
+
+<!-- CARRITO -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-center" id="offcanvasRightLabel">Carrito</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div id="carrito" class="offcanvas-body">
+            <div id="lista-carrito"></div>
+            <a class="vaciar-carrito mt-3" href="#" id="vaciar-carrito"
+            >Vaciar Carrito</a>
+            </div>
+
         </div>
     </main>
     <!-- footer -->
@@ -153,20 +109,22 @@
         <div>
             <p>© Copyright 2022, Luciano Coscia Developer</p>
         </div>
-        <div>
-            <a href="https://www.youtube.com/"
-            ><span class="jam jam-youtube"></span
+        <div class="contenedor-iconos">
+            <a class="img-redes-a" href="https://www.youtube.com/"
+              ><img src="../images/wsp.png"  alt="youtube" class="img-redes " ></img
             ></a>
-            <a href="https://es-la.facebook.com/"
-            ><span class="jam jam-facebook"></span
+            <a class="img-redes-a" href="https://es-la.facebook.com/"
+              ><img src="../images/facebook.png" alt="facebook"  class="img-redes "></img
             ></a>
-            <a href="https://www.instagram.com/"
-            ><span class="jam jam-instagram"></span
+            <a  class="img-redes-a"href="https://www.instagram.com/"
+              ><img src="../images/instagram.png" alt="instagram"  class="img-redes"></img
             ></a>
-            <a href="#"
-            ><span class="flecha-arriba jam jam-arrow-circle-up"></span
-            ></a>
-        </div>
+            <a class="img-redes-a" href="#"
+              >        <span class="img-redes-a flecha-arriba material-symbols-outlined">
+                arrow_upward
+                </span></a>
+    
+          </div>
     </footer>
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -182,3 +140,44 @@
     <script src="../js/modal.js" type="module"></script>
 </body>
 </html>
+
+
+<!--                <div class="flex_column2">
+                    <span class="flex_column2-icon material-symbols-outlined">
+                    account_circle
+                    </span>
+                    <div class="flex_column-login">
+                        <h4 class="titulo-login">Registro de Sesión</h4>
+    
+                        <label for="">Nombre:</label>
+                        <input id="nombre" type="text">
+    
+                        <label for="">Email:</label>
+                        <input  type="email" name="" id="email">
+    
+                        <label for="">Contraseña:</label>
+                        <input id="contrasenia" type="password">
+    
+                        <button id="botonRegistro" class="contenedor__button">Registrarse</button>
+                    </div>
+
+                </div> -->
+
+
+                <!--                 <div class="flex_column2">
+                    <span class="flex_column2-icon material-symbols-outlined">
+                        login
+                    </span>
+
+                    <div class="flex_column-login">
+                        <h4>Iniciar Sesión</h4>
+
+                        <label class="loguearte__paddings" for="">Email:</label>
+                        <input  class="loguearte__paddings" type="email" name="" id="email2">
+
+                        <label class="loguearte__paddings" for="">Contraseña:</label>
+                        <input id="contrasenia2" class="loguearte__paddings" type="password">
+                        <a class="a-login" href="">¿Olvidó su contraseña? Cambiar contraseña</a>
+                        <button id="botonInicioSesion" class="contenedor__button">Iniciar Sesion</button>
+                    </div>
+                </div> -->

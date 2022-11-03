@@ -334,16 +334,26 @@ nav ul li a:hover {
   background-color: #f2f2f2;
 }
 
-.home__contenedor2-login {
-  height: 76.3vh;
-}
-
-.flex_column-login {
+/* Login */
+.contenedor-sesion {
+  min-height: 81.3vh;
+  background-image: url(../../images/australia2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -2;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+}
+
+.grid-contenedor-sesion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  grid-template-rows: 1fr;
+  height: 100%;
+  width: 100%;
 }
 
 .flex_column2-icon {
@@ -373,10 +383,6 @@ nav ul li a:hover {
 .flex_column-login button:hover {
   background-color: #e2ebf3;
   color: #fff;
-}
-
-.titulo-login {
-  margin-bottom: 1rem;
 }
 
 .a-login {

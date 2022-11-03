@@ -12,7 +12,7 @@ fetch("./json/paquetes-populares.json")
                         <div class="flexrow">
                         <span>$</span><p>${paquete.precio}</p>
                         </div>
-                        <span> Descripción: ${paquete.desc}</span>
+                        <span>${paquete.desc}</span>
                         <button class="boton1 agregar-carrito" data-id="${paquete.id}" type="submit">Comprar</button>
                         `
         contenedorPaquetes.appendChild(div);
