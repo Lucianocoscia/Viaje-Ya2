@@ -10,7 +10,7 @@ fetch("./json/paquetes.json")
         div.innerHTML += `<img class="paquete__img" id="paquete${paquete.id}" src="${paquete.img}"  alt="${paquete.destino}">
                         <div class="displayRow">
                             <h2 class="absolute">${paquete.destino}</h2>
-                            <button id= "agregoDestino"  class="agregar-destino botonDestino">Consultar</button> 
+                            <button type='button' id= "agregoDestino" data-bs-toggle="modal" data-bs-target="#exampleModal"  class="agregar-destino botonDestino">Consultar</button> 
                         </div>       
                         `
         contenedorPaquetes.append(div);
