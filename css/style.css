@@ -1060,12 +1060,14 @@ footer a:hover {
     height: 12vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
   }
   .menu {
     display: block;
     border: transparent;
+    margin: 0;
+    padding: 0;
   }
   .menu:hover {
     background-color: transparent;
@@ -1078,7 +1080,10 @@ footer a:hover {
     padding: 0;
   }
   .logo__enlace {
+    display: none;
     margin-bottom: 0;
+    padding: 0;
+    overflow: hidden;
   }
   .home__contenedor {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/australia2.jpg);
