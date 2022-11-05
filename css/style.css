@@ -45,7 +45,6 @@ header {
   color: #000;
   text-align: center;
   text-decoration: none;
-  margin-left: 1rem;
   padding: 0.3rem;
   transition: .4s;
 }
@@ -879,8 +878,8 @@ footer span {
 }
 
 .img-redes {
-  width: 40px;
-  height: 40px;
+  width: 22px;
+  height: 22px;
   margin-right: 1rem;
 }
 
@@ -1080,9 +1079,6 @@ footer a:hover {
   }
   .logo__enlace {
     margin-bottom: 0;
-  }
-  .img-logo {
-    transform: translateX(30px);
   }
   .home__contenedor {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/australia2.jpg);

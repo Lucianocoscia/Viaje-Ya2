@@ -98,7 +98,7 @@ function loguearte (){
                 title: `Bienvenido ${localStorage.nombre}`,
                 showConfirmButton: false,
                 timer: 1500
-            }), setTimeout(()=>{window.location.href = '#'}, 2000);  ;
+            })  ;
 
         email2.value = "";
         contrasenia2.value ="";
