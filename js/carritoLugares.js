@@ -226,9 +226,6 @@ carritoHTML();
     }
 }); */
 
-/*                         <td> <button data-id ="${id}" class = "boton-eliminar icono2 jam jam-trash"></button> </td>
-                        <td> <button data-id ="${id}" class = "boton-resta  icono2 jam jam-minus"></button> </td>
-                        <td> <button data-id ="${id}" class = "boton-suma  icono2 jam jam-plus"></button> </td> */
 
 // Elimina paquete del carrito
 /* function eliminarPaquete (e){
@@ -242,11 +239,3 @@ carritoHTML();
 } */
 
 
-/*                            
-                        <td>${titulo}</td>
-                        <td>${precio}</td>
-                        <td>${cantidad}</td>
-                        <td><button id ="Eliminar${id}" class = "boton-eliminar icono2 jam jam-trash"></button></td>
-                        <td> <button id ="Restar${id}" class = "boton-resta  icono2 jam jam-minus"></button> </td>
-                        <td> <button id ="Sumar${id}" class = "boton-suma  icono2 jam jam-plus"></button> </td>
- */

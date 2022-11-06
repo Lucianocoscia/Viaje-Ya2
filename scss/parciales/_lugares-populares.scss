@@ -43,6 +43,7 @@
     overflow: hidden;
     box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
     background-color: #fff;
+    border-radius: 0.375rem;
 }
 .card__img {
     height: 250px;
@@ -63,12 +64,13 @@ div .boton1 {
     border-radius: 0.375rem;
     border: none;
     box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    
     background: transparent;
     color: #000;
     cursor: pointer;
     transition: .4s ease-in-out;
 }
 div .boton1:hover{
-    background-color: #bfbfbb8f;
+    background-color: #33b5a6ce;
     color: #fff;
 }

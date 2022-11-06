@@ -82,29 +82,17 @@
     // RESERVA
 
     .reserva__contenedor1{
-        height: 80vh;
+        height: 100%;
         margin-bottom: 1rem;
-    }
-    .form1__divs{
-        margin: 6px;
-        width: 100%;
-    }
-    .form1__divs label, input{
-        padding: 0;
     }
     .contenedor__form1{
-        flex-direction: column;
-        padding: 0;
-        margin-bottom: 1rem;
-        padding-bottom: 1rem;
-        transform: translate(0);
+        grid-template-columns: 1fr;
     }
-    .form1__divs input{
-        width: 70%;
-    }
-    .form1__divs_button{
-        width: 50%;
-    }
+
+    // .grid-col1 input{
+    //     width: 100%;
+    // }
+
 
     //LUGARES POPULARES
     h2{

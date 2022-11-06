@@ -30,7 +30,7 @@ let precioGlobal;
 let precioDescuentoGlobal;
 
 // Variables carrito
-const contenedorCarrito = document.querySelector("#lista-carrito tbody");
+const contenedorCarrito = document.querySelector("#lista-carrito");
 const vaciarCarritoBtn = document.querySelector("#vaciar-carrito");
 
 // Declaro el boton de la reserva
@@ -111,25 +111,41 @@ boton.addEventListener("click", ()=> {
       // Optimizando con variables
       const { fechaPartida, fechaVuelta, origen, destino, precio, precioDescuento, id, cantidad} = reserva;
 
-      const row = document.createElement("tr");
+      const div = document.createElement("div");
 
-      row.innerHTML = `
+      div.innerHTML = `
+      <hr className='hr-cart'></hr>
+      <div  class=' grid-principal'>
+          <div class='grid-hijo m-1'>
+            <h6>${destino}</h6>
 
-                      <td class="productoEnCarrito2-p" >Fecha de Partida: ${fechaPartida} 
-                                                              <p>Fecha de Vuelta: ${fechaVuelta}</p>
-                                                              <p>Origen: ${origen}</p>
-                                                              <p>Destino: ${destino}</p> 
-                              </td>
-                              
-                              <td class="productoEnCarrito2-p" >Precio: $${precio}
-                                                              <p>Precio con descuento: $${precioDescuento}</p>
-                              </td>
-                              <td>${cantidad}</td>
-                      <td><button id ="Eliminar${id}" class = "boton-eliminar icono2 jam jam-trash"></button></td>
-                      <td> <button id ="Restar${id}" class = "boton-resta  icono2 jam jam-minus"></button> </td>
-                      <td> <button id ="Sumar${id}" class = "boton-suma  icono2 jam jam-plus"></button> </td>
-      `;
-      contenedorCarrito.append(row);
+          </div>
+
+          <div class='grid-hijo2'>
+              <div class='div-detalle '> 
+                  <div class="m-1">
+                    <p>${fechaPartida}</p>
+                    <p>${fechaVuelta}</p>
+                  </div>
+
+                  <button id ="Restar${id}" class = "boton-resta icono2">-</button>
+                  <p >${cantidad}</p>
+                  <button id ="Sumar${id}" class = "boton-suma  icono2 ">+</button>
+              </div>
+
+              <div class='div-precio'>
+                  <button id ="Eliminar${id}" class = "boton-eliminar "><img src="./images/garbage-bin.gif" class="icono2" alt="trash"></button>
+              </div>
+          </div>
+      </div>
+      <hr>
+      <div class="contenedor-suma" >
+          <p class="fw-bold" >Subtotal</p>
+          <p>${precioDescuento}</p>
+      </div>
+
+                        `;
+      contenedorCarrito.append(div);
     
         // Eliminar reserva del carrito
         const botonEliminar = document.getElementById(`Eliminar${id}`);
@@ -267,10 +283,3 @@ function limpiarHTML() {
   }
 };
 
-
-          /*                       <td>${destino}</td>
-                              <td>${precioDescuento}</td>
-                              <td>${cantidad}</td>
-                              <td><button id ="Eliminar${id}" class = "boton-eliminar icono2 jam jam-trash"></button></td>
-                              <td> <button id ="Restar${id}" class = "boton-resta  icono2 jam jam-minus"></button> </td>
-                              <td> <button id ="Sumar${id}" class = "boton-suma  icono2 jam jam-plus"></button> </td> */
