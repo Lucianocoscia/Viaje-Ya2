@@ -27,7 +27,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 1px 6px 0 rgba(0, 176, 155, 0.28);
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
   color: #000;
   z-index: 10;
   top: 0;
@@ -876,6 +876,21 @@ footer a:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+  }
+  .nav-container li {
+    text-decoration: none;
+    color: #000000;
+  }
+  .nav-container li a {
+    color: #000000;
+    text-decoration: none;
   }
   .menu {
     display: block;

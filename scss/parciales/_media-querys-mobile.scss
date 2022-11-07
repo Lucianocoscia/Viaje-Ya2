@@ -11,7 +11,22 @@
         align-items: center;
         // position: relative;
     }
-
+    .nav-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // text-decoration: none;
+        list-style-type: none;
+    }
+    .nav-container li{
+        text-decoration: none;
+        color: #000000;
+    }
+    .nav-container li a{
+        color: #000000;
+        text-decoration: none;
+    }
     .menu{
         display: block;
         // position: absolute;
