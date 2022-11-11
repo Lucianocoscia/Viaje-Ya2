@@ -4,7 +4,32 @@
     // header 
 
     .menu{
+        display: block;
+        border: transparent;
+        margin: 0;
+        padding: 0;
+    }
+    .menu:hover{
+        background-color: transparent;
+        color: #fff;
+    }
+    nav{
         display: none;
+    }
+    .nav-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+    }
+    .nav-container li{
+        text-decoration: none;
+        color: #000000;
+    }
+    .nav-container li a{
+        color: #000000;
+        text-decoration: none;
     }
     header{
         height: 20vh;
@@ -12,101 +37,53 @@
         display: flex;
         flex-direction: row;
         align-content: center;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        // position: relative;
     }
     .contenedor_logo_links{
-        flex-direction: row;
-        // justify-content: space-between;
+        display:none;
     }
-
     .logo__enlace{
         margin: 0 ;
         padding: 0;
-        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    nav ul{
+    .img-logo{
+        width: 100%;
+        height: 25vh;
+        display: flex;
+    }
+    ol, ul{
         padding: 0;
-    }
-    nav ul li{
-        font-size: 16px;
-        margin-bottom: 4px;
-        margin-top: 5px;
     }
     .boton{
         padding: 0;
         width: 30px;
-        margin: 0;
-        margin-right: 5px;
+        margin: 2px;
         font-size: 1.2rem;
     }
     .icono{
         font-size: 1.2rem;
     }
 
-    // home y reserva
-    .home__contenedor{
-        height: 86vh;
-    }
-    .contenedor__form1{
+    //BUSQUEDA
+
+    .barra-input{
         width: 100%;
-    }
-    .contenedor__parrafo{
-        text-align: center;
-    }
-    .form1__divs{
-        padding: 0;
-    }
-    .form1__divs label,input{
-        padding: 0;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        font-size: 14px;
-        text-align: center;
-    }
-    .form1__divs input{
-        padding: 0;
-        margin-top: 5px;
-        margin-right: 5px;
-    }
-    .form1__divs_button{
-        padding: 5px;
-        margin: 0;
-        margin-left: 4px;
-        width: 100%;
-    }
-    .reserva__contenedor1{
-        height: 80vh;
-        margin-bottom: 1rem;
-    }
-    .form1__divs{
-        margin: 6px;
-        width: 100%;
-    }
-    .form1__divs label, input{
-        padding: 0;
-    }
-    .contenedor__form1{
-        flex-direction: column;
-        padding: 0;
-        margin-bottom: 1rem;
-        padding-bottom: 1rem;
-        transform: translate(0);
-    }
-    .form1__divs input{
-        width: 70%;
-    }
-    .form1__divs_button{
-        width: 50%;
     }
 
     //lugares populares
 
     .lugares_titulo{
         font-size: 1rem;
-        padding: 0;
+        padding: 0.5rem;
         margin: 0;
+    }
+    .cards{
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
     .contenedor__cards{
         padding: 0;
@@ -118,12 +95,6 @@
         justify-content: center;
     }
 
-    //login
-
-    .flex_column1-p, .flex_column1-a{
-        text-align: center;
-    }
-
     //footer
     footer{
         flex-direction: column;
@@ -133,14 +104,4 @@
         font-size: 2rem;
     }
     
-
-    //Login html
-    .home__contenedor2-login{
-        height: 100%;
-    }
-    .flex_column2{
-        width: 300px;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
 }

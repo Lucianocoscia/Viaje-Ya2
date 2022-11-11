@@ -9,14 +9,12 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        // position: relative;
     }
     .nav-container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        // text-decoration: none;
         list-style-type: none;
     }
     .nav-container li{
@@ -29,9 +27,6 @@
     }
     .menu{
         display: block;
-        // position: absolute;
-        // left: 0;
-        // transform: translateX(5px);
         border: transparent;
         margin: 0;
         padding: 0;
@@ -43,43 +38,41 @@
     nav{
         display: none;
     }
+    .contenedor_logo_links{
+        display:none;
+    }
     .ol, ul{
         padding: 0;
     }
     .logo__enlace{
 
-        display: none;
+        // display: none;
         margin-bottom: 0;
         padding: 0;
         overflow: hidden;
     }
-
+    .boton{
+        margin: 0;
+    }
 
     //HOME
     .home__contenedor{
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../../images/australia2.jpg);
-        // background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(images/paisaje00.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        // background-attachment: fixed;
         height: 91vh;
     }
     .carousel-caption{
         right: unset;
         left: unset;
-
     }
     .titulo-home{
-        // top: none;
-        // position: unset;
         top: unset;
         width: 100%;
     }
     .titulo-home h1{
-        // color: #fff;
         font-size: 2rem;
-        // width: 100%;
     }
     .titulo-home p{
         font-size: 18px;
@@ -87,14 +80,12 @@
     .boton-reservar{
         width: 80%;
         margin: 0;
-        // margin-left: 5%;
-        // margin-right: 5%;
     }
     .barra-input{
         width:100%
     }
 
-    // RESERVA
+    // MODAL RESERVA
 
     .reserva__contenedor1{
         height: 100%;
@@ -104,12 +95,16 @@
         grid-template-columns: 1fr;
     }
 
-    // .grid-col1 input{
-    //     width: 100%;
-    // }
-
-
+    // Busqueda
+    .contenedor-busqueda-div{
+        padding: 0;
+    }
+    .contenedor-busqueda{
+        padding: 0.5rem;
+    }
+    
     //LUGARES POPULARES
+
     h2{
         padding-top: 1rem;
         font-size: 20px;
@@ -122,30 +117,11 @@
         margin-top: 1rem;
     }
 
-
     // GRIDS
 
     .grid_img{
         object-fit: cover;
         background-position: center ;
-    }
-
-    //LOGIN
-    .home__contenedor2{
-        height: 100%;
-    }
-    .div__flex{
-        flex-direction: column;
-    }
-    .flex_column1-p, .flex_column1-a{
-        margin-bottom: 0;
-    }
-    .flex_column1{
-        padding: 0;
-        margin: 1rem;
-    }
-    .flex_column1-icon{
-        font-size: 2rem;
     }
 
     // CARDS PAQUETES
@@ -156,10 +132,11 @@
         width: 100%;
     }
 
-
     // CONTACTO
+
     .contenedor-form-text{
         padding:0;
+        width: 90%;
     }
     .titulo-contacto{
         font-size: 22px;
@@ -167,13 +144,14 @@
     .boton_contacto_flex{
         margin-bottom: 3rem;
     } 
+
     //FOOTER
+
     footer{
         bottom: 0;
         width: 100%;
         flex-direction: column;
         justify-content: center;
-        // align-items: center;
         height: 100%;
     }
     footer div p{
@@ -200,23 +178,4 @@
         padding: 0;
     }
 
-    //CARRITO
-    .carrito-visible{
-        min-width: 60%;
-    }
-    .boton_cerrar{
-        width: 100px;
-        padding: 10px;
-    }
-    .tbody td{
-        padding: 0.1rem;
-        font-size: 14px;
-    }
-    th{
-        font-size: 16px;
-        padding: 0.5rem;
-    }
-    .icono2{
-        font-size: 16;
-    }
 }

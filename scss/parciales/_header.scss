@@ -22,15 +22,13 @@ header {
     width: 100%;
     // width: ;
 }
+
 .logo__enlace{
-    font-size: 22px;
-    font-weight: 700;
-    color: #000;
-    text-align: center;
-    text-decoration: none;
-    // margin-left: 1rem;
-    padding: 0.3rem;
-    transition: .4s;
+    margin: 0 ;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .logo__enlace:hover{
     color: #98A1A6;

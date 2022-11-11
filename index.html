@@ -39,29 +39,9 @@
 
     <header>
         <!-- Boton Menu mobile/tablet -->
-          <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" class="boton m-1 menu"><span class="span-icon  material-symbols-outlined">
+          <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-label="Toggle navigation" class="boton m-1 menu"><span class="span-icon  material-symbols-outlined">
             menu
             </span></button>
-
-        <div class="offcanvas offcanvas-start offcanvas-sm" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-          <div class="offcanvas-header">
-            <p></p>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <div>
-                <ul class=" nav-container">
-                  <li class="m-1 p-1"><a href="./index.html">Inicio</a></li>
-                  <li class="m-1 p-1"><a href="./#contenedorDestino">Destinos</a></li>
-                  <li class="m-1 p-1"><a href="#lugares-populares">Lugares Populares</a></li>
-                  <li class="m-1 p-1"><a href="./#Contacto">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="dropdown mt-3">
-
-            </div>
-          </div>
-        </div>
 
 <!-- logo -->
       <a class="logo__enlace" href="#"
@@ -95,94 +75,113 @@
             </button>
           </li>
         </ul>
+      </div> 
+    </header>
+    
+    <main>
+      <!-- Off canvas -->
+      <div class="offcanvas offcanvas-start " data-bs-scroll="true"  tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <p></p>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+              <ul class=" nav-container">
+                <li class="m-1 p-1"><a href="./index.html">Inicio</a></li>
+                <li class="m-1 p-1"><a href="#contenedorDestino">Destinos</a></li>
+                <li class="m-1 p-1"><a href="#lugares-populares">Lugares Populares</a></li>
+                <li class="m-1 p-1"><a href="#Contacto">Contacto</a></li>
+              </ul>
+          </div>
+          <div class="dropdown mt-3">
+
+          </div>
+        </div>
       </div>
 
        <!-- Modal Login -->
-          <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-body p-4 p-md-5">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                    <span class="ion-ios-person"></span>
-                    </div>
-                    <h3 class="text-center mb-4">Inicio Sesion</h3>
-                    <form action="#" class="login-form">
-                      <div class="form-group">
-                        <input type="email" name="" id="email2" class="form-control rounded-left" placeholder="Email">
-                      </div>
-                      <div class="form-group d-flex">
-                        <input id="contrasenia2" type="password" class="form-control rounded-left" placeholder="Contraseña">
-                      </div>
-                      <div class="form-group">
-                        <button id="botonInicioSesion"  class="form-control btn-registro rounded submit px-3">Iniciar Sesion</button>
-                      </div>
-                      <div class="form-group d-md-flex">
-                        <div class="form-check w-50">
-                          <label class="custom-control fill-checkbox">
-                          <input type="checkbox" class="fill-control-input">
-                          <span class="fill-control-indicator"></span>
-                          <span class="fill-control-description">Recordarme</span>
-                          </label>
-                      </div>
-                      <div class="w-50 text-md-right">
-                        <a href="#">¿Olvidó su contraseña?</a>
-                      </div>
-                      </div>
-                    </form>
-                    </div>
-                    <div class="modal-footer justify-content-center">
-                      <p>No tenes una cuenta?<a data-bs-toggle="modal" data-bs-target="#userRegisterModal" href="">Crear cuenta</a></p>
-                      </div>
-                </div>
+       <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body p-4 p-md-5">
+              <div class="icon d-flex align-items-center justify-content-center">
+              <span class="ion-ios-person"></span>
               </div>
-            </div>
-
-       <!-- Modal Registro -->
-          <div class="modal fade" id="userRegisterModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-body p-4 p-md-5">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                    <span class="ion-ios-person"></span>
-                    </div>
-                    <h3 class="text-center mb-4">Registrarse</h3>
-                    <form action="#" class="login-form">
-                      <div class="form-group">
-                        <input id="nombre"  type="text" class="form-control rounded-left" placeholder="Username">
-                      </div>
-                      <div class="form-group d-flex">
-                        <input type="email" name="" id="email" class="form-control rounded-left" placeholder="Email">
-                      </div>
-                      <div class="form-group d-flex">
-                        <input id="contrasenia" type="password" class="form-control rounded-left" placeholder="Password">
-                      </div>
-                      <div class="form-group">
-                        <button id="botonRegistro" class="form-control btn-registro rounded submit px-3">Registrarse</button>
-                      </div>
-                      <div class="form-group d-md-flex">
-                        <div class="form-check w-50">
-                          <label class="custom-control fill-checkbox">
-                          <input type="checkbox" class="fill-control-input">
-                          <span class="fill-control-indicator"></span>
-                          <span class="fill-control-description">Remember Me</span>
-                          </label>
-                        </div>
-                        <div class="w-50 text-md-right">
-                          <a href="#">Forgot Password</a>
-                        </div>
-                      </div>
-                    </form>
-                    </div>
-                    <div class="modal-footer justify-content-center">
-                      <p>Ya tenes una cuenta? <a data-bs-toggle="modal" data-bs-target="#userModal" href="">Iniciar Sesion</a></p>
-                      </div>
+              <h3 class="text-center mb-4">Inicio Sesion</h3>
+              <form action="#" class="login-form">
+                <div class="form-group">
+                  <input type="email" name="" id="email2" class="form-control rounded-left" placeholder="Email">
                 </div>
+                <div class="form-group d-flex">
+                  <input id="contrasenia2" type="password" class="form-control rounded-left" placeholder="Contraseña">
+                </div>
+                <div class="form-group">
+                  <button id="botonInicioSesion"  class="form-control btn-registro rounded submit px-3">Iniciar Sesion</button>
+                </div>
+                <div class="form-group d-md-flex">
+                  <div class="form-check w-50">
+                    <label class="custom-control fill-checkbox">
+                    <input type="checkbox" class="fill-control-input">
+                    <span class="fill-control-indicator"></span>
+                    <span class="fill-control-description">Recordarme</span>
+                    </label>
+                </div>
+                <div class="w-50 text-md-right">
+                  <a href="#">¿Olvidó su contraseña?</a>
+                </div>
+                </div>
+              </form>
               </div>
-            </div>
-      
-    </header>
+              <div class="modal-footer justify-content-center">
+                <p>No tenes una cuenta?<a data-bs-toggle="modal" data-bs-target="#userRegisterModal" href="">Crear cuenta</a></p>
+                </div>
+          </div>
+        </div>
+      </div>
 
-    <main>
+ <!-- Modal Registro -->
+    <div class="modal fade" id="userRegisterModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body p-4 p-md-5">
+              <div class="icon d-flex align-items-center justify-content-center">
+              <span class="ion-ios-person"></span>
+              </div>
+              <h3 class="text-center mb-4">Registrarse</h3>
+              <form action="#" class="login-form">
+                <div class="form-group">
+                  <input id="nombre"  type="text" class="form-control rounded-left" placeholder="Username">
+                </div>
+                <div class="form-group d-flex">
+                  <input type="email" name="" id="email" class="form-control rounded-left" placeholder="Email">
+                </div>
+                <div class="form-group d-flex">
+                  <input id="contrasenia" type="password" class="form-control rounded-left" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <button id="botonRegistro" class="form-control btn-registro rounded submit px-3">Registrarse</button>
+                </div>
+                <div class="form-group d-md-flex">
+                  <div class="form-check w-50">
+                    <label class="custom-control fill-checkbox">
+                    <input type="checkbox" class="fill-control-input">
+                    <span class="fill-control-indicator"></span>
+                    <span class="fill-control-description">Remember Me</span>
+                    </label>
+                  </div>
+                  <div class="w-50 text-md-right">
+                    <a href="#">Forgot Password</a>
+                  </div>
+                </div>
+              </form>
+              </div>
+              <div class="modal-footer justify-content-center">
+                <p>Ya tenes una cuenta? <a data-bs-toggle="modal" data-bs-target="#userModal" href="">Iniciar Sesion</a></p>
+                </div>
+          </div>
+        </div>
+      </div>
 
 <!-- CAROUSEL -->
       <section class="contenedor-home">

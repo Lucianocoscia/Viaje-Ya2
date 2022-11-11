@@ -39,13 +39,11 @@ header {
 }
 
 .logo__enlace {
-  font-size: 22px;
-  font-weight: 700;
-  color: #000;
-  text-align: center;
-  text-decoration: none;
-  padding: 0.3rem;
-  transition: .4s;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo__enlace:hover {
@@ -743,7 +741,32 @@ footer a:hover {
 @media screen and (max-width: 1023px) {
   /*  Tablet */
   .menu {
+    display: block;
+    border: transparent;
+    margin: 0;
+    padding: 0;
+  }
+  .menu:hover {
+    background-color: transparent;
+    color: #fff;
+  }
+  nav {
     display: none;
+  }
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+  }
+  .nav-container li {
+    text-decoration: none;
+    color: #000000;
+  }
+  .nav-container li a {
+    color: #000000;
+    text-decoration: none;
   }
   header {
     height: 20vh;
@@ -751,93 +774,47 @@ footer a:hover {
     display: flex;
     flex-direction: row;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
   .contenedor_logo_links {
-    flex-direction: row;
+    display: none;
   }
   .logo__enlace {
     margin: 0;
     padding: 0;
-    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  nav ul {
+  .img-logo {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+  }
+  ol, ul {
     padding: 0;
-  }
-  nav ul li {
-    font-size: 16px;
-    margin-bottom: 4px;
-    margin-top: 5px;
   }
   .boton {
     padding: 0;
     width: 30px;
-    margin: 0;
-    margin-right: 5px;
+    margin: 2px;
     font-size: 1.2rem;
   }
   .icono {
     font-size: 1.2rem;
   }
-  .home__contenedor {
-    height: 86vh;
-  }
-  .contenedor__form1 {
+  .barra-input {
     width: 100%;
-  }
-  .contenedor__parrafo {
-    text-align: center;
-  }
-  .form1__divs {
-    padding: 0;
-  }
-  .form1__divs label, input {
-    padding: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 14px;
-    text-align: center;
-  }
-  .form1__divs input {
-    padding: 0;
-    margin-top: 5px;
-    margin-right: 5px;
-  }
-  .form1__divs_button {
-    padding: 5px;
-    margin: 0;
-    margin-left: 4px;
-    width: 100%;
-  }
-  .reserva__contenedor1 {
-    height: 80vh;
-    margin-bottom: 1rem;
-  }
-  .form1__divs {
-    margin: 6px;
-    width: 100%;
-  }
-  .form1__divs label, input {
-    padding: 0;
-  }
-  .contenedor__form1 {
-    flex-direction: column;
-    padding: 0;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    transform: translate(0);
-  }
-  .form1__divs input {
-    width: 70%;
-  }
-  .form1__divs_button {
-    width: 50%;
   }
   .lugares_titulo {
     font-size: 1rem;
-    padding: 0;
+    padding: 0.5rem;
     margin: 0;
+  }
+  .cards {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
   .contenedor__cards {
     padding: 0;
@@ -848,23 +825,12 @@ footer a:hover {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .flex_column1-p, .flex_column1-a {
-    text-align: center;
-  }
   footer {
     flex-direction: column;
     height: 100%;
   }
   footer span {
     font-size: 2rem;
-  }
-  .home__contenedor2-login {
-    height: 100%;
-  }
-  .flex_column2 {
-    width: 300px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
   }
 }
 
@@ -905,14 +871,19 @@ footer a:hover {
   nav {
     display: none;
   }
+  .contenedor_logo_links {
+    display: none;
+  }
   .ol, ul {
     padding: 0;
   }
   .logo__enlace {
-    display: none;
     margin-bottom: 0;
     padding: 0;
     overflow: hidden;
+  }
+  .boton {
+    margin: 0;
   }
   .home__contenedor {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/australia2.jpg);
@@ -949,6 +920,12 @@ footer a:hover {
   .contenedor__form1 {
     grid-template-columns: 1fr;
   }
+  .contenedor-busqueda-div {
+    padding: 0;
+  }
+  .contenedor-busqueda {
+    padding: 0.5rem;
+  }
   h2 {
     padding-top: 1rem;
     font-size: 20px;
@@ -964,27 +941,15 @@ footer a:hover {
     object-fit: cover;
     background-position: center;
   }
-  .home__contenedor2 {
-    height: 100%;
-  }
-  .div__flex {
-    flex-direction: column;
-  }
-  .flex_column1-p, .flex_column1-a {
-    margin-bottom: 0;
-  }
-  .flex_column1 {
-    padding: 0;
-    margin: 1rem;
-  }
-  .flex_column1-icon {
-    font-size: 2rem;
-  }
   .paquete__item {
     width: 100%;
   }
   .paquete__img {
     width: 100%;
+  }
+  .contenedor-form-text {
+    padding: 0;
+    width: 90%;
   }
   .titulo-contacto {
     font-size: 22px;
@@ -1021,24 +986,6 @@ footer a:hover {
   .flecha-arriba {
     margin: 0;
     padding: 0;
-  }
-  .carrito-visible {
-    min-width: 60%;
-  }
-  .boton_cerrar {
-    width: 100px;
-    padding: 10px;
-  }
-  .tbody td {
-    padding: 0.1rem;
-    font-size: 14px;
-  }
-  th {
-    font-size: 16px;
-    padding: 0.5rem;
-  }
-  .icono2 {
-    font-size: 16;
   }
 }
 /*# sourceMappingURL=style.css.map */
