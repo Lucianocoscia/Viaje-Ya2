@@ -1,6 +1,7 @@
 @media screen and (max-width:600px) { 
     /* Mobile */
 
+
     //HEADER
 
     header{
@@ -34,6 +35,9 @@
     .menu:hover{
         background-color: transparent;
         color: #fff;
+    }
+    .offcanvas{
+        max-width: 80%;
     }
     nav{
         display: none;

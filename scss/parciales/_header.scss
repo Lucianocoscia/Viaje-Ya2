@@ -7,20 +7,14 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    // margin-bottom: 4rem;
-    // background-color: rgba(245, 245, 245, 0.74);
     box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
-
-    // background-color: #ffff;
     color: #000;
-    // position: absolute;
     z-index: 10;
     top: 0;
 }
 .img-logo{
     height: 20vh;
     width: 100%;
-    // width: ;
 }
 
 .logo__enlace{
@@ -95,15 +89,7 @@ nav ul li a:hover {
     transition: .4s;
 }
 .boton:hover{
-    // background-color:#bce7ff ;
     box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
-}
-.userActive{
-    color: green;
-
-}
-.btnActive{
-    box-shadow: 0 1px 6px 0 rgba(33, 243, 6, 0.28);
 }
 /* Barra de busqueda */
 
@@ -118,7 +104,6 @@ nav ul li a:hover {
     transition: .4s ease-in-out;
 }
 .barra-busqueda:hover{
-    // border: 1px solid #fff;
     box-shadow: 1px 1px;
 }
 .boton-buscar{
@@ -138,10 +123,8 @@ nav ul li a:hover {
     font-size: 1rem;
 }
 .menu{
-    // visibility: hidden;
     display: none;
 }
 .span-icono-close{
-    // display: none;
     visibility: hidden;
 }
